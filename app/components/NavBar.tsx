@@ -1,6 +1,6 @@
 export function NavBar() {
   return (
-    <div className="sticky top-0 z-10 -mb-20 flex w-full justify-end gap-10 px-10 py-5 text-sm text-black">
+    <div className="sticky top-0 z-10 -mb-20 flex w-full justify-end gap-5 px-5 py-5 text-sm text-black sm:gap-10">
       <a
         href="#home"
         className="transition-border-color cursor-pointer border-b border-transparent p-1 duration-300 hover:animate-pulse hover:border-black"

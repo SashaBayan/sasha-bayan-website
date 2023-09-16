@@ -3,9 +3,9 @@ import { NavBar } from "./components/NavBar";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="h-screen w-screen">
       <NavBar />
-      <section className="flex w-screen">
+      <section className="flex w-full flex-wrap justify-around sm:flex-nowrap">
         {/* left side */}
         <div>
           <Image
@@ -17,7 +17,7 @@ export default function Home() {
           />
         </div>
         {/* right side */}
-        <div className="flex items-center justify-center bg-[#E8E1DD]">
+        <div className="flex flex-grow items-center justify-center bg-[#E8E1DD]">
           <h1 className="text-5xl font-black">
             Musician, collaborator, artist
           </h1>
