@@ -5,19 +5,24 @@ export default function Home() {
   return (
     <main className="h-screen w-screen">
       <NavBar />
-      <section className="flex w-full flex-wrap justify-around sm:flex-nowrap">
+      <section className="flex flex-wrap justify-center bg-[#E8E1DD] sm:flex-nowrap">
         {/* left side */}
-        <div>
+        <div className="relative lg:w-1/2">
           <Image
-            className="grayscale"
-            src="/hero-image.jpg"
+            className="grayscale lg:hidden"
+            src="/hero-image-with-text.png"
             width={720}
             height={990}
             alt="sasha bayan photo"
           />
+          <img
+            className="hidden object-cover grayscale lg:block"
+            src="/hero-image-with-text.png"
+            alt="sasha bayan photo"
+          />
         </div>
         {/* right side */}
-        <div className="justify-left flex flex-grow items-center bg-[#E8E1DD] px-16 pt-20">
+        <div className="flex w-1/2 flex-grow items-center justify-start px-16 pt-20">
           <div className="flex flex-col gap-16">
             <div className="max-w-sm">
               <div className="flex flex-col gap-8">
