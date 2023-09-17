@@ -1,11 +1,13 @@
 import { IntroSection } from "./components/IntroSection";
+import { MediaSection } from "./components/MediaSection";
 import { NavBar } from "./components/NavBar";
 
 export default function Home() {
   return (
-    <main className="h-screen w-screen">
+    <main>
       <NavBar />
       <IntroSection />
+      <MediaSection />
     </main>
   );
 }
