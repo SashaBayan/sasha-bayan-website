@@ -22,11 +22,11 @@ export default function Home() {
           />
         </div>
         {/* right side */}
-        <div className="flex w-1/2 flex-grow items-center justify-start px-16 pt-20">
+        <div className="flex w-1/2 flex-grow items-center justify-start px-16 pt-20 md:pt-36">
           <div className="flex flex-col gap-16">
             <div className="max-w-sm">
               <div className="flex flex-col gap-8">
-                <h1 className="text-5xl font-black">
+                <h1 className="text-4xl font-black md:text-5xl">
                   Musician, collaborator, artist
                 </h1>
                 <p>
