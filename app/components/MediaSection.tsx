@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AudioPlayer } from "./AudioPlayer";
 
 export function MediaSection() {
   return (
@@ -21,10 +22,20 @@ export function MediaSection() {
         /> */}
       </div>
       {/* right side */}
-      <div className="flex w-1/2 items-center justify-start bg-white px-16 pt-20 md:pt-36">
+      <div className="flex w-1/2 flex-col gap-16 bg-white px-16 pt-20 md:pt-36">
         {/* TODO: should be Glosa Display font, add this secondary font */}
         <div>
-          <h4 className="text-sm uppercase">Listen</h4>
+          <h4 className="mb-5 text-sm uppercase">Listen</h4>
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col justify-between gap-5 sm:flex-row">
+              <AudioPlayer src="test-audio.wav" trackName="Enough" />
+              <AudioPlayer src="test-audio-2.wav" trackName="Tomorrow" />
+            </div>
+            <div className="flex flex-col justify-between gap-5 sm:flex-row">
+              <AudioPlayer src="test-audio.wav" trackName="Enough" />
+              <AudioPlayer src="test-audio-2.wav" trackName="Tomorrow" />
+            </div>
+          </div>
         </div>
         <div>
           <h4 className="text-sm uppercase">Watch</h4>
