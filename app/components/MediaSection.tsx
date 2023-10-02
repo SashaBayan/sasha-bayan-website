@@ -1,5 +1,14 @@
+"use client";
 import Image from "next/image";
 import { AudioPlayer } from "./AudioPlayer";
+
+const videoIds = [
+  "ycoErhyEqbQ",
+  "i5cuBi2iTi4",
+  "XwyrG8QX5tA",
+  "uLOb6xh_tIc",
+  "aNNPN26xhjs",
+];
 
 export function MediaSection() {
   return (
@@ -22,9 +31,9 @@ export function MediaSection() {
         /> */}
       </div>
       {/* right side */}
-      <div className="flex w-1/2 flex-col gap-16 bg-white px-16 pt-20 md:pt-36">
+      <div className="flex flex-col gap-16 bg-white px-16 pt-20 sm:w-1/2 md:pt-36">
         {/* TODO: should be Glosa Display font, add this secondary font */}
-        <div>
+        <div className="px-16 text-center sm:px-0 sm:text-left">
           <h4 className="mb-5 text-sm uppercase">Listen</h4>
           <div className="flex flex-col gap-5">
             <div className="flex flex-col justify-between gap-5 sm:flex-row">
@@ -37,8 +46,25 @@ export function MediaSection() {
             </div>
           </div>
         </div>
-        <div>
-          <h4 className="text-sm uppercase">Watch</h4>
+        <div className="flex flex-col gap-5">
+          <h4 className="mb-5 text-sm uppercase">Watch</h4>
+          {/* <div className="flex flex-col items-center justify-center gap-5"> */}
+          <div className="aspect-h-9 aspect-w-16">
+            <iframe
+              src={`https://www.youtube.com/embed/${videoIds[0]}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow-full-screen"
+              allowFullScreen
+            />
+          </div>
+          <div className="flex flex-wrap justify-center gap-5">
+            {videoIds.slice(1).map((videoId) => (
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow-full-screen"
+                allowFullScreen
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
