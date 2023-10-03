@@ -41,15 +41,15 @@ export function MediaSection() {
               <AudioPlayer src="test-audio-2.wav" trackName="Tomorrow" />
             </div>
             <div className="flex flex-col justify-between gap-5 sm:flex-row">
-              <AudioPlayer src="test-audio.wav" trackName="Enough" />
-              <AudioPlayer src="test-audio-2.wav" trackName="Tomorrow" />
+              <AudioPlayer src="test-audio.wav" trackName="Tester" />
+              <AudioPlayer src="test-audio-2.wav" trackName="Testing 4" />
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-5">
           <h4 className="mb-5 text-sm uppercase">Watch</h4>
           {/* <div className="flex flex-col items-center justify-center gap-5"> */}
-          <div className="aspect-h-9 aspect-w-16">
+          <div className="sm:aspect-h-9 sm:aspect-w-16">
             <iframe
               src={`https://www.youtube.com/embed/${videoIds[0]}`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow-full-screen"
@@ -59,6 +59,7 @@ export function MediaSection() {
           <div className="flex flex-wrap justify-center gap-5">
             {videoIds.slice(1).map((videoId) => (
               <iframe
+                key={videoId}
                 src={`https://www.youtube.com/embed/${videoId}`}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow-full-screen"
                 allowFullScreen
