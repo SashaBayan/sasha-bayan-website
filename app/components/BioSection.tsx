@@ -62,7 +62,7 @@ export function BioSection() {
             className="cursor-pointer"
             onClick={() => setSelectedImage("/sasha-instruments.jpg")}
             src={"/sasha-instruments.jpg"}
-            width={226}
+            width={260}
             height={168}
             alt="sasha bayan photo"
           />
