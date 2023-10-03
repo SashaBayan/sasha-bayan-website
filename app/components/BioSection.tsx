@@ -46,26 +46,16 @@ export function BioSection() {
       <div className="flex flex-col bg-[#E8E1DD] lg:w-1/2">
         {/* TODO: use akkurat light font */}
         {/* add nav-bar here */}
-        <div className="flex w-full justify-center">
-          <div className="max-w-lg">
-            <div className="relative aspect-9 h-[336px] w-[452px] overflow-hidden object-cover">
-              <Image
-                className="img-cover absolute left-0 top-0 h-full w-full"
-                src={selectedImage}
-                layout="fill"
-                alt="sasha bayan photo"
-              />
-            </div>
-          </div>
-          {/* <div className="max-h-10 object-fill">
+        {/* <div className="flex w-full justify-center"> */}
+        <div className="my-5 flex justify-center">
+          <div className="relative flex h-[600px] w-[600px] items-center justify-center ">
             <Image
-              className="mb-10"
               src={selectedImage}
-              width={200}
-              height={200}
+              layout="fill"
+              objectFit="contain"
               alt="sasha bayan photo"
             />
-          </div> */}
+          </div>
         </div>
         <div className="flex w-full justify-around gap-5">
           <Image
