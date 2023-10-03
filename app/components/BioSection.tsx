@@ -59,7 +59,7 @@ export function BioSection() {
         </div>
         <div className="flex w-full justify-around gap-5">
           <Image
-            className="cursor-pointer"
+            className="cursor-pointer border border-solid border-white"
             onClick={() => setSelectedImage("/sasha-instruments.jpg")}
             src={"/sasha-instruments.jpg"}
             width={260}
@@ -67,7 +67,7 @@ export function BioSection() {
             alt="sasha bayan photo"
           />
           <Image
-            className="cursor-pointer"
+            className="cursor-pointer border border-solid border-white"
             onClick={() => setSelectedImage("/sasha-sitar.jpg")}
             src="/sasha-sitar.jpg"
             width={133}
@@ -75,7 +75,7 @@ export function BioSection() {
             alt="sasha bayan photo"
           />
           <Image
-            className="cursor-pointer"
+            className="cursor-pointer border border-solid border-white"
             onClick={() => setSelectedImage("/sasha-guitar.jpg")}
             src="/sasha-guitar.jpg"
             width={133}
