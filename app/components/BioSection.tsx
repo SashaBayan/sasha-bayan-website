@@ -47,8 +47,8 @@ export function BioSection() {
         {/* TODO: use akkurat light font */}
         {/* add nav-bar here */}
         {/* <div className="flex w-full justify-center"> */}
-        <div className="my-5 flex justify-center">
-          <div className="relative flex h-[600px] w-[600px] items-center justify-center ">
+        <div className="mt-5 flex justify-center">
+          <div className="relative flex items-center justify-center sm:h-[400px] sm:w-[400px] lg:h-[600px] lg:w-[600px] ">
             <Image
               src={selectedImage}
               layout="fill"
@@ -57,7 +57,7 @@ export function BioSection() {
             />
           </div>
         </div>
-        <div className="flex w-full justify-around gap-5">
+        <div className="flex w-full flex-wrap justify-around gap-5 p-5">
           <Image
             className="cursor-pointer border border-solid border-white"
             onClick={() => setSelectedImage("/sasha-instruments.jpg")}
