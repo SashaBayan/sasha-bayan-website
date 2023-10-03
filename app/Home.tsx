@@ -1,5 +1,4 @@
 import { BioSection } from "./components/BioSection";
-import { ContactSection } from "./components/ContactSection";
 import { IntroSection } from "./components/IntroSection";
 import { MediaSection } from "./components/MediaSection";
 import { NavBar } from "./components/NavBar";
