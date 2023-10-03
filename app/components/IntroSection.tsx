@@ -23,10 +23,10 @@ export function IntroSection() {
         <div className="flex flex-col gap-16">
           <div className="max-w-sm">
             <div className="flex flex-col gap-8">
-              <h1 className="text-4xl font-black md:text-5xl">
+              <h1 className="font-glosa-display text-4xl font-black md:text-5xl">
                 Musician, collaborator, artist
               </h1>
-              <p>
+              <p className="font-light">
                 Sasha Bayan is a classically trained multi-instrumentalist,
                 composer, and singer-songwriter based in the Bay Area. He
                 regularly performs solo and in ensembles. He performs
