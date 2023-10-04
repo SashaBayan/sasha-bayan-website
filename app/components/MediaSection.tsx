@@ -15,8 +15,6 @@ export function MediaSection() {
     <section className="flex flex-wrap justify-between bg-[#E8E1DD] sm:flex-nowrap">
       {/* left side */}
       <div className="flex w-1/2  flex-col items-center justify-start pt-20">
-        {/* TODO: use akkurat light font */}
-        {/* <h4 className="text-sm font-thin uppercase">Sasha Bayan</h4> */}
         <Image
           className="grayscale"
           src="/guitar-photo-with-text.png"
