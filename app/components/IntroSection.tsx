@@ -22,8 +22,8 @@ export function IntroSection() {
         />
       </div>
       {/* right side */}
-      <div className="flex flex-grow   items-center justify-center px-16 py-20 pt-20 sm:w-1/2 md:pt-36">
-        <div className="flex flex-col gap-16">
+      <div className="flex flex-grow items-center justify-center px-16 py-20 pt-20 sm:w-1/2 md:pt-36">
+        <div className="flex flex-col items-center gap-16 sm:items-start">
           <div className="max-w-sm">
             <div className="flex flex-col gap-8">
               <h1 className="font-glosa-display text-4xl font-black md:text-5xl">
@@ -38,7 +38,7 @@ export function IntroSection() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col items-center gap-3 sm:items-start">
             <div className="flex flex-wrap gap-2">
               <p>New album dropping November 2023!</p>
               <button> Get notified.</button>

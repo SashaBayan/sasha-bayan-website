@@ -43,7 +43,7 @@ export function BioSection() {
         </div>
       </div>
       {/* right side */}
-      <div className="flex flex-col  bg-[#E8E1DD] pb-20 sm:w-1/2">
+      <div className="flex flex-col  bg-[#E8E1DD] py-20 sm:w-1/2">
         {/* TODO: use akkurat light font */}
         {/* add nav-bar here */}
         {/* <div className="flex w-full justify-center"> */}
