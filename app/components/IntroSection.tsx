@@ -4,10 +4,10 @@ export function IntroSection() {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center bg-[#E8E1DD] sm:flex-row"
+      className="flex flex-wrap justify-center bg-[#E8E1DD] sm:flex-nowrap"
     >
       {/* left side */}
-      <div className="relative flex flex-col justify-center bg-[#919191] bg-gradient-to-bl  from-[#E8E1DD] to-[#7d7d7d] sm:sm:w-1/2">
+      <div className="relative flex flex-col justify-center bg-[#919191] bg-gradient-to-bl  from-[#E8E1DD] to-[#7d7d7d] sm:w-1/2">
         <Image
           className="grayscale lg:hidden"
           src="/hero-image-with-text.png"
@@ -22,7 +22,7 @@ export function IntroSection() {
         />
       </div>
       {/* right side */}
-      <div className="flex flex-grow items-center justify-center px-16 py-20 pt-20 sm:sm:w-1/2 md:pt-36">
+      <div className="flex flex-grow   items-center justify-center px-16 py-20 pt-20 sm:w-1/2 md:pt-36">
         <div className="flex flex-col gap-16">
           <div className="max-w-sm">
             <div className="flex flex-col gap-8">
