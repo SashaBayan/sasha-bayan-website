@@ -13,20 +13,20 @@ const videoIds = [
 
 const tracks = [
   {
-    src: "test-audio.wav",
-    trackName: "Enough",
+    src: "the-naming.wav",
+    trackName: "The Naming",
   },
   {
-    src: "test-audio-2.wav",
-    trackName: "Tomorrow",
+    src: "talk-is-cheap.wav",
+    trackName: "Talk is Cheap",
   },
   {
     src: "mcdonalds-jingle.mp3",
     trackName: "Mickey D's",
   },
   {
-    src: "test-audio-4.wav",
-    trackName: "Sun Landing",
+    src: "heartbeat-fanfare.wav",
+    trackName: "Heartbeat Fanfare",
   },
 ];
 
