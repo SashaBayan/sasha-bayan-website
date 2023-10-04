@@ -12,7 +12,7 @@ const videoIds = [
 
 export function MediaSection() {
   return (
-    <section className="flex flex-wrap justify-around bg-[#E8E1DD] py-10 sm:flex-nowrap">
+    <section className="max-[45rem] flex flex-wrap justify-around bg-[#E8E1DD] py-10 sm:flex-nowrap">
       {/* left side */}
       <div>
         {/* TODO: use akkurat light font */}

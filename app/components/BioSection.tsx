@@ -8,7 +8,7 @@ export function BioSection() {
   return (
     <section className="flex w-full flex-wrap justify-around bg-white py-10 sm:flex-nowrap">
       {/* left side */}
-      <div className="flex flex-col lg:w-1/2">
+      <div className="flex max-w-[45rem] flex-col lg:w-1/2">
         <h4 className="ml-16 flex w-full justify-start text-sm font-thin uppercase sm:mb-24">
           Sasha Bayan
         </h4>
@@ -43,7 +43,7 @@ export function BioSection() {
         </div>
       </div>
       {/* right side */}
-      <div className="flex flex-col bg-[#E8E1DD] lg:w-1/2">
+      <div className="flex max-w-[45rem] flex-col bg-[#E8E1DD] lg:w-1/2">
         {/* TODO: use akkurat light font */}
         {/* add nav-bar here */}
         {/* <div className="flex w-full justify-center"> */}

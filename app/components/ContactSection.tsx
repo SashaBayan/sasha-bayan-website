@@ -6,9 +6,9 @@ import { AudioPlayer } from "./AudioPlayer";
 
 export function ContactSection() {
   return (
-    <section className="flex h-[432px] w-full flex-wrap justify-between py-10 sm:flex-nowrap">
+    <section className="flex h-[432px] w-full flex-wrap justify-around py-10 sm:flex-nowrap">
       {/* left side */}
-      <div className="flex w-1/2 flex-col items-center justify-center gap-3 bg-[#E8E1DD]">
+      <div className="flex w-1/2 max-w-[45rem] flex-col items-center justify-center gap-3 bg-[#E8E1DD]">
         <h1 className="font-glosa-display text-5xl"> Follow </h1>
         <a
           className="flex gap-2"
@@ -20,7 +20,7 @@ export function ContactSection() {
         </a>
       </div>
       {/* right side */}
-      <div className="flex w-1/2 flex-col items-center justify-center gap-3 bg-white">
+      <div className="flex w-1/2 max-w-[45rem] flex-col items-center justify-center gap-3 bg-white">
         <h1 className="font-glosa-display text-5xl"> Book </h1>
         <a
           className="flex gap-2"
