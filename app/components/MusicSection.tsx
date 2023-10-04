@@ -14,7 +14,7 @@ export function MusicSection() {
   return (
     <section
       id="music"
-      className="flex flex-wrap justify-between bg-[#E8E1DD] sm:flex-nowrap"
+      className="flex flex-col-reverse flex-wrap justify-between bg-[#E8E1DD] sm:flex-row sm:flex-nowrap"
     >
       {/* left side */}
       <div className="flex flex-col  items-center justify-start pt-20 sm:w-1/2">

@@ -8,7 +8,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="flex h-[432px] w-full flex-col justify-around sm:flex-row sm:flex-nowrap"
+      className="flex h-[432px] w-full flex-col-reverse justify-around sm:flex-row sm:flex-nowrap"
     >
       {/* left side */}
       <div className="flex h-full flex-col items-center justify-center gap-3 bg-[#E8E1DD] sm:w-1/2">
