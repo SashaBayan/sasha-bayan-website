@@ -14,7 +14,7 @@ export function MediaSection() {
   return (
     <section className="flex flex-wrap justify-between bg-[#E8E1DD] sm:flex-nowrap">
       {/* left side */}
-      <div className="flex w-1/2 max-w-[45rem] flex-col items-center justify-center">
+      <div className="flex w-1/2 max-w-[45rem] flex-col items-center justify-start pt-20">
         {/* TODO: use akkurat light font */}
         {/* <h4 className="text-sm font-thin uppercase">Sasha Bayan</h4> */}
         <Image
@@ -26,7 +26,7 @@ export function MediaSection() {
         />
       </div>
       {/* right side */}
-      <div className="flex max-w-[45rem] flex-col gap-16 bg-white px-16 pt-20 sm:w-1/2 md:pt-36">
+      <div className="flex max-w-[45rem] flex-col gap-16 bg-white px-16 py-20 pt-20 sm:w-1/2 md:pt-36">
         {/* TODO: should be Glosa Display font, add this secondary font */}
         <div className="px-16 text-center sm:px-0 sm:text-left">
           <h4 className="mb-5 text-sm uppercase">Listen</h4>
@@ -56,8 +56,8 @@ export function MediaSection() {
               <iframe
                 key={videoId}
                 src={`https://www.youtube.com/embed/${videoId}`}
-                width="284"
-                height="170"
+                width="260"
+                height="150"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow-full-screen"
                 allowFullScreen
               />

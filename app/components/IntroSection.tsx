@@ -19,7 +19,7 @@ export function IntroSection() {
         />
       </div>
       {/* right side */}
-      <div className="flex w-1/2  max-w-[45rem] flex-grow items-center justify-center px-16 pt-20 md:pt-36">
+      <div className="flex w-1/2  max-w-[45rem] flex-grow items-center justify-center px-16 py-20 pt-20 md:pt-36">
         <div className="flex flex-col gap-16">
           <div className="max-w-sm">
             <div className="flex flex-col gap-8">
