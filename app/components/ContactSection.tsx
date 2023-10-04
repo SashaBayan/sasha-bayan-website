@@ -16,7 +16,7 @@ export function ContactSection() {
         <a
           className="flex gap-2"
           target="_blank"
-          href="www.instagram.com/sasha.bayan"
+          href="https:www.instagram.com/sasha.bayan"
         >
           <FaInstagram className="text-2xl" />
           <p>@sasha.bayan</p>
@@ -28,7 +28,7 @@ export function ContactSection() {
         <a
           className="flex gap-2"
           target="_blank"
-          href="www.instagram.com/sasha.bayan"
+          href="mailto:booking@sashabayan.com"
         >
           <GoMail className="text-2xl" />
           <p>booking@sashabayan.com</p>
