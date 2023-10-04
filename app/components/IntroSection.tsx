@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function IntroSection() {
   return (
@@ -51,9 +52,11 @@ export function IntroSection() {
               alt="album cover"
             />
             <div className="flex w-full justify-center">
-              <button className="rounded-3xl bg-white px-5 py-3 text-xl">
-                Preorder
-              </button>
+              <Link href="mailing-list">
+                <button className="rounded-3xl bg-white px-5 py-3 text-xl">
+                  Get Notified
+                </button>
+              </Link>
             </div>
           </div>
         </div>
