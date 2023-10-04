@@ -4,7 +4,7 @@ export function IntroSection() {
   return (
     <section className="flex flex-wrap justify-center bg-[#E8E1DD] sm:flex-nowrap">
       {/* left side */}
-      <div className="relative w-1/2  bg-white">
+      <div className="relative flex w-1/2 flex-col justify-center bg-[#919191]  bg-gradient-to-bl from-[#919191] to-[#7d7d7d]">
         <Image
           className="grayscale lg:hidden"
           src="/hero-image-with-text.png"
