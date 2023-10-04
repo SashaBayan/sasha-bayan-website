@@ -1,40 +1,48 @@
+"use client";
+import { useActiveSection } from "../hooks/useActiveSection";
+const sections = ["home", "music", "bio", "contact"];
+
 export function NavBar() {
+  const activeSection = useActiveSection();
   return (
     <div className="sticky top-0 z-10 -mb-20 flex w-full justify-between gap-5 bg-[#E8E1DD] px-5 py-5 text-sm text-black sm:gap-10">
-      <a
-        href="#home"
-        className="transition-border-color cursor-pointer border-b border-transparent p-1 duration-300 hover:animate-pulse hover:border-black"
-      >
+      <Link href="#home">
         <h4 className="flex items-center text-sm font-thin uppercase tracking-widest">
           Sasha Bayan
         </h4>
-      </a>
+      </Link>
       <div className="flex sm:gap-10">
-        <a
-          href="#home"
-          className="transition-border-color cursor-pointer border-b border-transparent p-1 duration-300 hover:animate-pulse hover:border-black"
-        >
-          Home
-        </a>
-        <a
-          href="#music"
-          className="transition-border-color cursor-pointer border-b border-transparent p-1 duration-300 hover:animate-pulse hover:border-black"
-        >
-          Music
-        </a>
-        <a
-          href="#bio"
-          className="transition-border-color cursor-pointer border-b border-transparent p-1 duration-300 hover:animate-pulse hover:border-black"
-        >
-          Bio
-        </a>
-        <a
-          href="#contact"
-          className="transition-border-color cursor-pointer border-b border-transparent p-1 duration-300 hover:animate-pulse hover:border-black"
-        >
-          Contact
-        </a>
+        {sections.map((section) => (
+          <Link
+            key={section}
+            isActive={activeSection === section}
+            href={`#${section}`}
+          >
+            {section}
+          </Link>
+        ))}
       </div>
     </div>
+  );
+}
+
+function Link({
+  href,
+  children,
+  isActive,
+}: {
+  href: string;
+  children: React.ReactNode;
+  isActive?: boolean;
+}) {
+  return (
+    <a
+      href={href}
+      className={`transition-border-color cursor-pointer border-b p-1 capitalize duration-700 hover:animate-pulse hover:border-black ${
+        isActive ? "border-b !border-black" : "border-transparent"
+      }`}
+    >
+      {children}
+    </a>
   );
 }
