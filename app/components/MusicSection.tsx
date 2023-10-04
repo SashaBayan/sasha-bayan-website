@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { AudioPlayer } from "./AudioPlayer";
+import { useAudioPlayer } from "../hooks/useAudioPlayer";
 
 const videoIds = [
   "ycoErhyEqbQ",
@@ -20,16 +21,17 @@ const tracks = [
     trackName: "Tomorrow",
   },
   {
-    src: "test-audio.wav",
-    trackName: "Tester",
+    src: "mcdonalds-jingle.mp3",
+    trackName: "Mickey D's",
   },
   {
-    src: "test-audio-2.wav",
+    src: "test-audio-4.wav",
     trackName: "Sun Landing",
   },
 ];
 
 export function MusicSection() {
+  const { currentSrc, playAudio, stopAudio } = useAudioPlayer();
   return (
     <section
       id="music"
@@ -52,7 +54,13 @@ export function MusicSection() {
           <h4 className="mb-5 text-sm uppercase">Listen</h4>
           <div className="grid grid-cols-1 place-items-center gap-5 sm:place-items-stretch md:grid-cols-2 ">
             {tracks.map((track) => (
-              <AudioPlayer key={track.src} {...track} />
+              <AudioPlayer
+                key={track.src}
+                {...track}
+                isPlaying={currentSrc === track.src}
+                onPlay={() => playAudio(track.src)}
+                onStop={stopAudio}
+              />
             ))}
           </div>
         </div>
