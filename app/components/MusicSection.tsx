@@ -29,23 +29,21 @@ export function MusicSection() {
       {/* right side */}
       <div className="flex  flex-col gap-16 bg-white px-16 py-20 pt-20 sm:sm:w-1/2 md:pt-36">
         {/* TODO: should be Glosa Display font, add this secondary font */}
-        <div className="px-16 text-center sm:px-0 sm:text-left">
+        <div className="text-center sm:px-0 sm:text-left">
           <h4 className="mb-5 text-sm uppercase">Listen</h4>
-          <div className="flex flex-col gap-5">
-            <div className="flex flex-col justify-between gap-5 sm:flex-row">
-              <AudioPlayer src="test-audio.wav" trackName="Enough" />
-              <AudioPlayer src="test-audio-2.wav" trackName="Tomorrow" />
-            </div>
-            <div className="flex flex-col justify-between gap-5 sm:flex-row">
-              <AudioPlayer src="test-audio.wav" trackName="Tester" />
-              <AudioPlayer src="test-audio-2.wav" trackName="Testing 4" />
-            </div>
+          <div className="grid grid-cols-1 place-items-center gap-5 sm:grid-cols-2">
+            <AudioPlayer src="test-audio.wav" trackName="Enough" />
+            <AudioPlayer src="test-audio-2.wav" trackName="Tomorrow" />
+            <AudioPlayer src="test-audio.wav" trackName="Tester" />
+            <AudioPlayer src="test-audio-2.wav" trackName="Testing 4" />
           </div>
         </div>
         <div className="flex flex-col gap-5">
-          <h4 className="mb-5 text-sm uppercase">Watch</h4>
+          <h4 className="mb-5 text-center text-sm uppercase sm:text-left">
+            Watch
+          </h4>
           {/* <div className="flex flex-col items-center justify-center gap-5"> */}
-          <div className="sm:aspect-h-9 sm:aspect-w-16">
+          <div className="aspect-h-9 aspect-w-16">
             <iframe
               src={`https://www.youtube.com/embed/${videoIds[0]}`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allow-full-screen"

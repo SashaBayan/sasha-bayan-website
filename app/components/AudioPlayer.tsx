@@ -26,7 +26,7 @@ export function AudioPlayer({
   return (
     <div
       onClick={handlePlayPause}
-      className="flex w-full min-w-fit cursor-pointer items-center rounded-full border border-solid border-black bg-white p-4 px-6 shadow-md"
+      className="flex w-full min-w-fit max-w-[300px] cursor-pointer items-center rounded-full border border-solid border-black bg-white p-4 px-6 shadow-md"
     >
       <button className="mr-4">
         {isPlaying ? <BsStopCircle /> : <BsPlayCircle />}
