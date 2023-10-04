@@ -7,7 +7,11 @@ export function NavBar() {
   return (
     <div className="sticky top-0 z-10 -mb-20 flex w-full justify-between bg-[#E8E1DD] px-5 py-5 text-sm text-black">
       <Link href="#home">
-        <h4 className="flex items-center text-sm font-thin uppercase tracking-widest">
+        <h4
+          className={`flex items-center text-sm font-thin uppercase tracking-widest transition-all duration-700 ${
+            activeSection !== "home" ? "opacity-100" : "opacity-0"
+          }`}
+        >
           Sasha Bayan
         </h4>
       </Link>
