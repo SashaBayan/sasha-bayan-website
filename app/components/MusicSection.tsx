@@ -10,6 +10,25 @@ const videoIds = [
   "aNNPN26xhjs",
 ];
 
+const tracks = [
+  {
+    src: "test-audio.wav",
+    trackName: "Enough",
+  },
+  {
+    src: "test-audio-2.wav",
+    trackName: "Tomorrow",
+  },
+  {
+    src: "test-audio.wav",
+    trackName: "Tester",
+  },
+  {
+    src: "test-audio-2.wav",
+    trackName: "Sun Landing",
+  },
+];
+
 export function MusicSection() {
   return (
     <section
@@ -31,11 +50,10 @@ export function MusicSection() {
         {/* TODO: should be Glosa Display font, add this secondary font */}
         <div className="text-center sm:px-0 sm:text-left">
           <h4 className="mb-5 text-sm uppercase">Listen</h4>
-          <div className="grid grid-cols-1 place-items-center gap-5 sm:grid-cols-2">
-            <AudioPlayer src="test-audio.wav" trackName="Enough" />
-            <AudioPlayer src="test-audio-2.wav" trackName="Tomorrow" />
-            <AudioPlayer src="test-audio.wav" trackName="Tester" />
-            <AudioPlayer src="test-audio-2.wav" trackName="Testing 4" />
+          <div className="grid grid-cols-1 place-items-center gap-5 sm:place-items-stretch md:grid-cols-2 ">
+            {tracks.map((track) => (
+              <AudioPlayer key={track.src} {...track} />
+            ))}
           </div>
         </div>
         <div className="flex flex-col gap-5">
