@@ -6,7 +6,10 @@ import { AudioPlayer } from "./AudioPlayer";
 
 export function ContactSection() {
   return (
-    <section className="flex h-[432px] w-full flex-wrap justify-around sm:flex-nowrap">
+    <section
+      id="contact"
+      className="flex h-[432px] w-full flex-wrap justify-around sm:flex-nowrap"
+    >
       {/* left side */}
       <div className="flex w-1/2  flex-col items-center justify-center gap-3 bg-[#E8E1DD]">
         <h1 className="font-glosa-display text-5xl"> Follow </h1>

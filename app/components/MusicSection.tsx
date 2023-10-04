@@ -12,7 +12,10 @@ const videoIds = [
 
 export function MediaSection() {
   return (
-    <section className="flex flex-wrap justify-between bg-[#E8E1DD] sm:flex-nowrap">
+    <section
+      id="music"
+      className="flex flex-wrap justify-between bg-[#E8E1DD] sm:flex-nowrap"
+    >
       {/* left side */}
       <div className="flex w-1/2  flex-col items-center justify-start pt-20">
         <Image

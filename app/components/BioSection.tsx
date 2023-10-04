@@ -6,7 +6,10 @@ import { useState } from "react";
 export function BioSection() {
   const [selectedImage, setSelectedImage] = useState("/sasha-instruments.jpg");
   return (
-    <section className="flex w-full flex-wrap justify-around bg-white sm:flex-nowrap">
+    <section
+      id="bio"
+      className="flex w-full flex-wrap justify-around bg-white sm:flex-nowrap"
+    >
       {/* left side */}
       <div className="flex w-1/2 flex-col py-20">
         {/* bio section */}

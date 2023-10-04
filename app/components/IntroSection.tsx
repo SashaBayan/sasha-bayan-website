@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export function IntroSection() {
   return (
-    <section className="flex flex-wrap justify-center bg-[#E8E1DD] sm:flex-nowrap">
+    <section
+      id="home"
+      className="flex flex-wrap justify-center bg-[#E8E1DD] sm:flex-nowrap"
+    >
       {/* left side */}
       <div className="relative flex w-1/2 flex-col justify-center bg-[#919191]  bg-gradient-to-bl from-[#E8E1DD] to-[#7d7d7d]">
         <Image
