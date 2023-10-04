@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { AudioPlayer } from "./AudioPlayer";
 import { useAudioPlayer } from "../hooks/useAudioPlayer";
+import { CLOUDFRONT_URL } from "../constants/urls";
 
 const videoIds = [
   "ycoErhyEqbQ",
@@ -41,7 +42,7 @@ export function MusicSection() {
       <div className="flex flex-col  items-center justify-start pt-20 sm:w-1/2">
         <Image
           className="grayscale"
-          src="/guitar-photo-with-text.png"
+          src={`${CLOUDFRONT_URL}/guitar-photo-with-text.png`}
           width={480}
           height={720}
           alt="sasha bayan photo"

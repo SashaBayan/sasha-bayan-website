@@ -2,9 +2,12 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { CLOUDFRONT_URL } from "../constants/urls";
 
 export function BioSection() {
-  const [selectedImage, setSelectedImage] = useState("/sasha-instruments.jpg");
+  const [selectedImage, setSelectedImage] = useState(
+    `${CLOUDFRONT_URL}/sasha-instruments.jpg`,
+  );
   return (
     <section
       id="bio"
@@ -61,7 +64,7 @@ export function BioSection() {
           <Image
             className="cursor-pointer border border-solid border-white"
             onClick={() => setSelectedImage("/sasha-instruments.jpg")}
-            src={"/sasha-instruments.jpg"}
+            src={`${CLOUDFRONT_URL}/sasha-instruments.jpg`}
             width={260}
             height={168}
             alt="sasha bayan photo"
@@ -69,7 +72,7 @@ export function BioSection() {
           <Image
             className="cursor-pointer border border-solid border-white"
             onClick={() => setSelectedImage("/sasha-sitar.jpg")}
-            src="/sasha-sitar.jpg"
+            src={`${CLOUDFRONT_URL}/sasha-sitar.jpg`}
             width={133}
             height={200}
             alt="sasha bayan photo"
@@ -77,7 +80,7 @@ export function BioSection() {
           <Image
             className="cursor-pointer border border-solid border-white"
             onClick={() => setSelectedImage("/sasha-guitar.jpg")}
-            src="/sasha-guitar.jpg"
+            src={`${CLOUDFRONT_URL}/sasha-guitar.jpg`}
             width={133}
             height={200}
             alt="sasha bayan photo"

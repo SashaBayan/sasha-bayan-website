@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CLOUDFRONT_URL } from "../constants/urls";
 
 export function IntroSection() {
   return (
@@ -11,14 +12,14 @@ export function IntroSection() {
       <div className="relative flex flex-col justify-center bg-[#919191] bg-gradient-to-bl  from-[#E8E1DD] to-[#7d7d7d] sm:w-1/2">
         <Image
           className="grayscale lg:hidden"
-          src="/hero-image-with-text.png"
+          src={`${CLOUDFRONT_URL}/hero-image-with-text.png`}
           width={720}
           height={990}
           alt="sasha bayan photo"
         />
         <img
           className="hidden object-cover grayscale lg:block"
-          src="/hero-image-with-text.png"
+          src={`${CLOUDFRONT_URL}/hero-image-with-text.png`}
           alt="sasha bayan photo"
         />
       </div>
@@ -48,7 +49,7 @@ export function IntroSection() {
               className="-ml-2"
               width={575}
               height={575}
-              src="/album-cover-placeholder.png"
+              src={`${CLOUDFRONT_URL}/album-cover-placeholder.png`}
               alt="album cover"
             />
             <div className="flex w-full justify-center">
