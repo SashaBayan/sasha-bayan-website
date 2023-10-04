@@ -4,7 +4,7 @@ export function IntroSection() {
   return (
     <section className="flex flex-wrap justify-center bg-[#E8E1DD] sm:flex-nowrap">
       {/* left side */}
-      <div className="relative bg-white lg:w-1/2">
+      <div className="relative max-w-[45rem] bg-white lg:w-1/2">
         <Image
           className="grayscale lg:hidden"
           src="/hero-image-with-text.png"
@@ -19,7 +19,7 @@ export function IntroSection() {
         />
       </div>
       {/* right side */}
-      <div className="flex w-1/2 flex-grow items-center justify-start px-16 pt-20 md:pt-36">
+      <div className="flex w-1/2 flex-grow items-center justify-center px-16 pt-20 md:pt-36">
         <div className="flex flex-col gap-16">
           <div className="max-w-sm">
             <div className="flex flex-col gap-8">
