@@ -13,7 +13,7 @@ export function BioSection() {
       {/* left side */}
       <div className="flex w-1/2 flex-col py-20">
         {/* bio section */}
-        <div className="flex w-full flex-col items-center justify-center">
+        <div className="flex h-full w-full flex-col items-center justify-center">
           <div className="flex max-w-lg flex-col gap-10 px-10">
             <p>
               Sasha Bayan is multi-instrumentalist and composer based in San
