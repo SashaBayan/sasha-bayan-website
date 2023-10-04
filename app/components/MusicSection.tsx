@@ -10,7 +10,7 @@ const videoIds = [
   "aNNPN26xhjs",
 ];
 
-export function MediaSection() {
+export function MusicSection() {
   return (
     <section
       id="music"
