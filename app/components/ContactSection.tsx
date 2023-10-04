@@ -8,10 +8,10 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="flex h-[432px] w-full flex-wrap justify-around sm:flex-nowrap"
+      className="flex h-[432px] w-full flex-col justify-around sm:flex-row sm:flex-nowrap"
     >
       {/* left side */}
-      <div className="flex w-1/2  flex-col items-center justify-center gap-3 bg-[#E8E1DD]">
+      <div className="flex h-full flex-col items-center justify-center gap-3 bg-[#E8E1DD] sm:w-1/2">
         <h1 className="font-glosa-display text-5xl"> Follow </h1>
         <a
           className="flex gap-2"
@@ -23,7 +23,7 @@ export function ContactSection() {
         </a>
       </div>
       {/* right side */}
-      <div className="flex w-1/2  flex-col items-center justify-center gap-3 bg-white">
+      <div className="flex h-full flex-col items-center justify-center gap-3 bg-white sm:w-1/2">
         <h1 className="font-glosa-display text-5xl"> Book </h1>
         <a
           className="flex gap-2"

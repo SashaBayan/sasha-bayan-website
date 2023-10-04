@@ -11,7 +11,7 @@ export function BioSection() {
       className="flex w-full flex-wrap justify-around bg-white sm:flex-nowrap"
     >
       {/* left side */}
-      <div className="flex w-1/2 flex-col py-20">
+      <div className="flex flex-col py-20 sm:w-1/2">
         {/* bio section */}
         <div className="flex h-full w-full flex-col items-center justify-center">
           <div className="flex max-w-lg flex-col gap-10 px-10">
@@ -43,7 +43,7 @@ export function BioSection() {
         </div>
       </div>
       {/* right side */}
-      <div className="flex w-1/2  flex-col bg-[#E8E1DD] pb-20">
+      <div className="flex flex-col  bg-[#E8E1DD] pb-20 sm:w-1/2">
         {/* TODO: use akkurat light font */}
         {/* add nav-bar here */}
         {/* <div className="flex w-full justify-center"> */}

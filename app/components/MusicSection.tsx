@@ -17,7 +17,7 @@ export function MediaSection() {
       className="flex flex-wrap justify-between bg-[#E8E1DD] sm:flex-nowrap"
     >
       {/* left side */}
-      <div className="flex w-1/2  flex-col items-center justify-start pt-20">
+      <div className="flex flex-col  items-center justify-start pt-20 sm:w-1/2">
         <Image
           className="grayscale"
           src="/guitar-photo-with-text.png"
@@ -27,7 +27,7 @@ export function MediaSection() {
         />
       </div>
       {/* right side */}
-      <div className="flex  flex-col gap-16 bg-white px-16 py-20 pt-20 sm:w-1/2 md:pt-36">
+      <div className="flex  flex-col gap-16 bg-white px-16 py-20 pt-20 sm:sm:w-1/2 md:pt-36">
         {/* TODO: should be Glosa Display font, add this secondary font */}
         <div className="px-16 text-center sm:px-0 sm:text-left">
           <h4 className="mb-5 text-sm uppercase">Listen</h4>
