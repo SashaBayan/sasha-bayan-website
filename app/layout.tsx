@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col items-center justify-center">
-        <div className="max-w-[90rem]">{children}</div>
+        {children}
       </body>
     </html>
   );
