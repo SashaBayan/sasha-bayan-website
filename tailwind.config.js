@@ -8,8 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        akkurat: ["Akkurat", "sans-serif"],
-        "glosa-display": ["Glosa Display", "serif"],
+        akkurat: ["Akkurat", "Arial", "Helvetica", "sans-serif"],
+        "glosa-display": [
+          "Glosa Display",
+          "Georgia",
+          "Times New Roman",
+          "serif",
+        ],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
