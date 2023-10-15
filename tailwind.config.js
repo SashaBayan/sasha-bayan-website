@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#E8E1DD",
+      },
       fontFamily: {
         akkurat: ["Akkurat", "Arial", "Helvetica", "sans-serif"],
         "glosa-display": [

@@ -14,7 +14,7 @@ function Section({
   rightBg = "bg-[#E8E1DD]",
 }: SectionProps) {
   return (
-    <section className="flex w-full flex-wrap items-center justify-between">
+    <section className="flex h-full w-full flex-wrap items-center justify-between">
       {/* left side */}
       <div
         className={`flex w-full flex-col items-center ${leftBg} px-10 py-20 sm:w-1/2`}
@@ -23,8 +23,10 @@ function Section({
       </div>
 
       {/* right side */}
-      <div className={`flex w-full justify-center ${rightBg} py-20 sm:w-1/2`}>
-        <div className="h-96 w-96">{rightContent}</div>
+      <div
+        className={`flex h-full w-full items-center justify-center ${rightBg} py-20 sm:w-1/2`}
+      >
+        {rightContent}
       </div>
     </section>
   );

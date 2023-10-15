@@ -16,7 +16,11 @@ const LeftContent = (
   </>
 );
 
-const RightContent = <img src="/album-cover.jpeg" alt="album cover" />;
+const RightContent = (
+  <div className="h-96 w-96">
+    <img src="/album-cover.jpeg" alt="album cover" />
+  </div>
+);
 
 export function AboutSection() {
   return (
