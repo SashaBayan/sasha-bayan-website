@@ -1,7 +1,7 @@
 import Section from "@/app/components/Section";
 
 const LeftContent = (
-  <>
+  <div className="max-w-xl text-center sm:text-left">
     <h2 className="mb-4 text-2xl font-semibold">About The Album</h2>
     <p className="mb-4">
       This album isn't just a collection of songs—it's a narrative journey of 11
@@ -13,11 +13,11 @@ const LeftContent = (
       Sasha Bayan's latest project, reflecting a musical journey reminiscent of
       artists like Sufjan Stevens and Andrew Bird.
     </p>
-  </>
+  </div>
 );
 
 const RightContent = (
-  <div className="h-96 w-96">
+  <div className="h-80 w-80 md:h-96 md:w-96">
     <img src="/album-cover.jpeg" alt="album cover" />
   </div>
 );

@@ -15,6 +15,7 @@ function Section({
   rightBg = "bg-[#E8E1DD]",
   reverse,
 }: SectionProps) {
+  const sideClasses = "flex w-full flex-col items-center px-10 py-20 sm:w-1/2";
   return (
     <section
       className={`flex w-full flex-wrap items-center justify-between ${
@@ -22,18 +23,10 @@ function Section({
       }`}
     >
       {/* left side */}
-      <div
-        className={`flex w-full flex-col items-center ${leftBg} px-10 py-20 sm:w-1/2`}
-      >
-        <div className="max-w-xl text-center sm:text-left">{leftContent}</div>
-      </div>
+      <div className={`${sideClasses} ${leftBg}`}>{leftContent}</div>
 
       {/* right side */}
-      <div
-        className={`flex w-full items-center justify-center sm:h-full ${rightBg} px-10 py-20 sm:w-1/2`}
-      >
-        {rightContent}
-      </div>
+      <div className={`${sideClasses} ${rightBg}`}>{rightContent}</div>
     </section>
   );
 }

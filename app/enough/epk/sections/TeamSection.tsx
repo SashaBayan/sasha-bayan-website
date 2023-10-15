@@ -9,10 +9,10 @@ const leftContent = (
       </div>
     </div>
     <div className="m flex flex-wrap justify-center grayscale lg:flex-nowrap lg:justify-between">
-      <div className="relative h-64 w-64 md:h-80 md:w-80 ">
+      <div className="relative h-64 w-64">
         <Image alt="sam suggs" fill src="/white-sam-suggs.png" />
       </div>
-      <div className="relative h-64 w-64 md:h-80 md:w-80">
+      <div className="relative h-64 w-64">
         <Image alt="gustavo cortinas" fill src="/white-gustavo-cortinas.png" />
       </div>
     </div>
