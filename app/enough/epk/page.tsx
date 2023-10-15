@@ -21,8 +21,7 @@ export default function EnoughEPK() {
                   Sasha Bayan presents "enough"
                 </h1>
                 <p className="mb-8 text-xl">
-                  A deeply introspective album that transcends the clichés of
-                  breakup albums, offering an exploration into love, self-worth,
+                  A deeply introspective album that explores love, self-worth,
                   and acceptance.
                 </p>
               </div>
