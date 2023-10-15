@@ -29,6 +29,7 @@ export function AboutSection() {
       rightContent={RightContent}
       leftBg="bg-white"
       rightBg="bg-[#E8E1DD]"
+      reverse
     />
   );
 }

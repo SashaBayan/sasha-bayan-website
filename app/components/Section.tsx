@@ -5,6 +5,7 @@ interface SectionProps {
   rightContent: ReactNode;
   leftBg?: string;
   rightBg?: string;
+  reverse?: boolean;
 }
 
 function Section({
@@ -12,9 +13,14 @@ function Section({
   rightContent,
   leftBg = "bg-white",
   rightBg = "bg-[#E8E1DD]",
+  reverse,
 }: SectionProps) {
   return (
-    <section className="flex h-full w-full flex-wrap items-center justify-between">
+    <section
+      className={`flex h-full w-full flex-wrap items-center justify-between ${
+        reverse ? "flex-col-reverse sm:flex-row" : ""
+      }`}
+    >
       {/* left side */}
       <div
         className={`flex w-full flex-col items-center ${leftBg} px-10 py-20 sm:w-1/2`}
@@ -24,7 +30,7 @@ function Section({
 
       {/* right side */}
       <div
-        className={`flex h-full w-full items-center justify-center ${rightBg} py-20 sm:w-1/2`}
+        className={`flex w-full items-center justify-center sm:h-full ${rightBg} py-20 sm:w-1/2`}
       >
         {rightContent}
       </div>
