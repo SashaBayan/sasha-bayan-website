@@ -30,7 +30,7 @@ function Section({
 
       {/* right side */}
       <div
-        className={`flex w-full items-center justify-center sm:h-full ${rightBg} py-20 sm:w-1/2`}
+        className={`flex w-full items-center justify-center sm:h-full ${rightBg} px-10 py-20 sm:w-1/2`}
       >
         {rightContent}
       </div>

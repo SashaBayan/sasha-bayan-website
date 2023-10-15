@@ -4,15 +4,15 @@ import Image from "next/image";
 const leftContent = (
   <div className="flex-wrap">
     <div className="mb-10 flex justify-center">
-      <div className="relative  h-80 w-80 grayscale">
+      <div className="relative h-80 w-80 grayscale">
         <Image alt="sasha bayan" fill src="/white-sasha-guitar-2.png" />
       </div>
     </div>
-    <div className="flex flex-wrap justify-center grayscale md:flex-nowrap md:justify-between">
-      <div className="relative h-80  w-80">
+    <div className="m flex flex-wrap justify-center grayscale lg:flex-nowrap lg:justify-between">
+      <div className="relative h-64 w-64 md:h-80 md:w-80 ">
         <Image alt="sam suggs" fill src="/white-sam-suggs.png" />
       </div>
-      <div className="relative h-80  w-80">
+      <div className="relative h-64 w-64 md:h-80 md:w-80">
         <Image alt="gustavo cortinas" fill src="/white-gustavo-cortinas.png" />
       </div>
     </div>
