@@ -27,31 +27,7 @@ const rightContent = (
         The album involved an ensemble of world-class artists and engineers who
         each contributed their creative genius.
       </p>
-      <ul className="list-inside list-disc">
-        <h2 className="text-bold my-2 text-center underline"> Musicians </h2>
-        <li>
-          <strong>Songwriter, Singer, Guitarist, Producer:</strong> Sasha Bayan
-        </li>
-        <li>
-          <strong>Bassist, Pianist, Co-Producer:</strong> Sam Suggs
-        </li>
-        <li>
-          <strong>Drummer:</strong> Gustavo Cortiñas
-        </li>
-        <h2 className="text-bold my-2 text-center underline"> Production </h2>
-        <li>
-          <strong>Sound Engineer:</strong> Scott Steinman
-        </li>
-        <li>
-          <strong>Production Consultant:</strong> Kitt Lyles
-        </li>
-        <li>
-          <strong>Mix Engineer:</strong> Javier Veldeavellano
-        </li>
-        <li>
-          <strong>Mastering Engineer:</strong> JP Berreondo
-        </li>
-      </ul>
+      <TeamLists />
     </div>
   </>
 );
@@ -67,36 +43,92 @@ export function TeamSection() {
   );
 }
 
-// <div className="mt-12 text-center">
-// <a href="#" className="text-blue-500 underline">
-//   🔊 Listen to the full album: Sasha Bayan's "enough"
-// </a>
-// </div>
+interface TeamMemberProps {
+  role: string;
+  name: string;
+  website: string;
+}
 
-// <div className="mt-8 text-center">
-// <h2 className="mb-4 text-2xl font-semibold">Contacts and Media</h2>
-// <p>
-//   <strong>Official Website:</strong>{" "}
-//   <a href="#" className="text-blue-500 underline">
-//     Sasha Bayan Official
-//   </a>
-// </p>
-// <p>
-//   <strong>Facebook:</strong>{" "}
-//   <a href="#" className="text-blue-500 underline">
-//     Sasha Bayan FB
-//   </a>
-// </p>
-// <p>
-//   <strong>Instagram:</strong>{" "}
-//   <a href="#" className="text-blue-500 underline">
-//     Sasha Bayan Instagram
-//   </a>
-// </p>
-// <p>
-//   <strong>Download Press Photos:</strong>{" "}
-//   <a href="#" className="text-blue-500 underline">
-//     Press Photo Dropbox
-//   </a>
-// </p>
-// </div>
+const TeamMember: React.FC<TeamMemberProps> = ({ role, name, website }) => (
+  <li>
+    <a
+      className="hover:animate-pulse"
+      href={website}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <strong>{role}:</strong> {name}
+    </a>
+  </li>
+);
+
+interface TeamListProps {
+  category: string;
+  members: TeamMemberProps[];
+}
+
+const TeamList: React.FC<TeamListProps> = ({ category, members }) => (
+  <div>
+    <h2 className="text-bold my-2 text-center underline">{category}</h2>
+    <ul className="list-inside list-disc">
+      {members.map((member, index) => (
+        <TeamMember
+          key={index}
+          role={member.role}
+          name={member.name}
+          website={member.website}
+        />
+      ))}
+    </ul>
+  </div>
+);
+
+export function TeamLists() {
+  const musicians = [
+    {
+      role: "Songwriter, Singer, Guitarist, Producer",
+      name: "Sasha Bayan",
+      website: "https://sashabayan.com",
+    },
+    {
+      role: "Bassist, Pianist, Co-Producer",
+      name: "Sam Suggs",
+      website: "https://samsuggs.com",
+    },
+    {
+      role: "Drummer",
+      name: "Gustavo Cortiñas",
+      website: "https://gustavocortinasmusic.com",
+    },
+  ];
+
+  const production = [
+    {
+      role: "Sound Engineer",
+      name: "Scott Steinman",
+      website: "https://studiomediarecording.com/music.html",
+    },
+    {
+      role: "Production Consultant",
+      name: "Kitt Lyles",
+      website: "https://www.kittlylesmusic.com/",
+    },
+    {
+      role: "Mix Engineer",
+      name: "Javier Veldeavellano",
+      website: "https://javillano.com/",
+    },
+    {
+      role: "Mastering Engineer",
+      name: "JP Berreondo",
+      website: "https://asonicworld.com/",
+    },
+  ];
+
+  return (
+    <div>
+      <TeamList category="Musicians" members={musicians} />
+      <TeamList category="Production" members={production} />
+    </div>
+  );
+}
