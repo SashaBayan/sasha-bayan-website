@@ -1,20 +1,34 @@
 import Section from "@/app/components/Section";
+import Image from "next/image";
 
 const leftContent = (
-  <>
-    <h2>The Team Behind the Album</h2>
-    <p>
-      The album involved an ensemble of world-class artists and engineers who
-      each contributed their creative genius.
-    </p>
-  </>
+  <div className="flex-wrap">
+    <div className="mb-10 flex justify-center">
+      <div className="relative  h-80 w-80 grayscale">
+        <Image alt="sasha bayan" fill src="/white-sasha-guitar-2.png" />
+      </div>
+    </div>
+    <div className="flex flex-wrap justify-center grayscale md:flex-nowrap md:justify-between">
+      <div className="relative h-80  w-80">
+        <Image alt="sam suggs" fill src="/white-sam-suggs.png" />
+      </div>
+      <div className="relative h-80  w-80">
+        <Image alt="gustavo cortinas" fill src="/white-gustavo-cortinas.png" />
+      </div>
+    </div>
+  </div>
 );
 
 const rightContent = (
   <>
-    <div>
+    <div className="flex flex-col items-center gap-2">
       <h2 className="mb-4 text-2xl font-semibold">The Team Behind The Album</h2>
+      <p className="mb-2 max-w-md text-center">
+        The album involved an ensemble of world-class artists and engineers who
+        each contributed their creative genius.
+      </p>
       <ul className="list-inside list-disc">
+        <h2 className="text-bold my-2 text-center underline"> Musicians </h2>
         <li>
           <strong>Songwriter, Singer, Guitarist:</strong> Sasha Bayan
         </li>
@@ -24,6 +38,7 @@ const rightContent = (
         <li>
           <strong>Drummer:</strong> Gustavo Cortiñas
         </li>
+        <h2 className="text-bold my-2 text-center underline"> Production </h2>
         <li>
           <strong>Sound Engineer:</strong> Scott Steinman
         </li>
