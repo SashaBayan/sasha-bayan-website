@@ -1,9 +1,7 @@
-import Section from "@/app/components/Section";
 import Head from "next/head";
-import Image from "next/image";
-import { AboutSection } from "./sections/AboutSection";
-import { TeamSection } from "./sections/TeamSection";
-import { ContactSection } from "./sections/ContactSection";
+import { AboutSection } from "../sections/AboutSection";
+import { TeamSection } from "../sections/TeamSection";
+import { ContactSection } from "../sections/ContactSection";
 
 export default function EnoughEPK() {
   return (
