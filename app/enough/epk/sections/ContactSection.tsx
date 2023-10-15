@@ -1,5 +1,6 @@
 import Section from "@/app/components/Section";
-import { FaDownload, FaFacebook, FaGlobe, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { MdFileDownload, MdLanguage } from "react-icons/md";
 import { GoMail } from "react-icons/go";
 
 function Link({
@@ -32,12 +33,12 @@ const mediaLinks = [
   },
   {
     href: "https://www.sashabayan.com",
-    icon: <FaGlobe className="text-2xl" />,
+    icon: <MdLanguage className="text-2xl" />,
     copy: "sashabayan.com",
   },
   {
     href: "https://www.dropbox.com/your-dropbox-link-for-press-photos",
-    icon: <FaDownload className="text-2xl" />,
+    icon: <MdFileDownload className="text-2xl" />,
     copy: "Download Press Photos",
   },
 ];
@@ -51,7 +52,7 @@ const contactLinks = [
 ];
 
 const rightContent = (
-  <div className="flex h-full flex-col items-start justify-center gap-3 sm:w-1/2">
+  <div className="flex h-full flex-col items-center justify-center gap-3 sm:w-1/2">
     <h1 className="font-glosa-display text-5xl"> Media </h1>
     <div className="flex flex-col gap-5">
       {mediaLinks.map((link, index) => (
