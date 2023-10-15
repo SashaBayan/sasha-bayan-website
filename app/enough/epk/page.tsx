@@ -1,5 +1,7 @@
+import Section from "@/app/components/Section";
 import Head from "next/head";
 import Image from "next/image";
+import { AboutSection } from "./sections/AboutSection";
 
 export default function EnoughEPK() {
   return (
@@ -26,34 +28,7 @@ export default function EnoughEPK() {
             </div>
           </div>
         </section>
-
-        <section className="flex w-full flex-wrap items-center justify-between">
-          {/* left side */}
-          <div className="flex w-full flex-col items-center bg-white px-10 py-20 sm:w-1/2">
-            <div className="max-w-xl text-center sm:text-left">
-              <h2 className="mb-4 text-2xl font-semibold">About The Album</h2>
-              <p className="mb-4">
-                This album isn't just a collection of songs—it's a narrative
-                journey of 11 tracks that investigates intimate questions of
-                enoughness in love and life.
-              </p>
-              <p>
-                Conceived and nurtured over a period of two years, the album
-                "enough" is Sasha Bayan's latest project, reflecting a musical
-                journey reminiscent of artists like Sufjan Stevens and Andrew
-                Bird. It delves into the multifaceted human experiences of
-                questioning love, self-worth, and the complex emotion of feeling
-                'enough.'
-              </p>
-            </div>
-          </div>
-          {/* right side */}
-          <div className="flex w-full justify-center bg-[#E8E1DD] py-20 sm:w-1/2">
-            <div className="h-96 w-96">
-              <img src="/album-cover.jpeg" alt="album cover" />
-            </div>
-          </div>
-        </section>
+        <AboutSection />
       </main>
     </>
   );
