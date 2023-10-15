@@ -17,7 +17,7 @@ function Section({
 }: SectionProps) {
   return (
     <section
-      className={`flex h-full w-full flex-wrap items-center justify-between ${
+      className={`flex w-full flex-wrap items-center justify-between ${
         reverse ? "flex-col-reverse sm:flex-row" : ""
       }`}
     >
