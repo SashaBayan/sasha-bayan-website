@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { AboutSection } from "./sections/AboutSection";
 import { TeamSection } from "./sections/TeamSection";
+import { ContactSection } from "./sections/ContactSection";
 
 export default function EnoughEPK() {
   return (
@@ -30,6 +31,7 @@ export default function EnoughEPK() {
         </section>
         <AboutSection />
         <TeamSection />
+        <ContactSection />
       </main>
     </>
   );
