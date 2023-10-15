@@ -11,7 +11,7 @@ const LeftContent = (
     <p>
       Conceived and nurtured over a period of two years, the album "enough" is
       Sasha Bayan's latest project, reflecting a musical journey reminiscent of
-      artists like Sufjan Stevens and Andrew Bird.
+      the works of artists like Sufjan Stevens and Andrew Bird.
     </p>
   </div>
 );
