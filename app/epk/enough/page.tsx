@@ -21,7 +21,7 @@ export default function EnoughEPK() {
                 </h1>
                 <p className="mb-8 text-xl">
                   A deeply introspective album that explores love, self-worth,
-                  and acceptance.
+                  grief, and acceptance.
                 </p>
               </div>
             </div>
