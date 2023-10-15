@@ -30,7 +30,7 @@ const rightContent = (
       <ul className="list-inside list-disc">
         <h2 className="text-bold my-2 text-center underline"> Musicians </h2>
         <li>
-          <strong>Songwriter, Singer, Guitarist:</strong> Sasha Bayan
+          <strong>Songwriter, Singer, Guitarist, Producer:</strong> Sasha Bayan
         </li>
         <li>
           <strong>Bassist, Pianist, Co-Producer:</strong> Sam Suggs
