@@ -49,7 +49,7 @@ export function IntroSection() {
               className="-ml-2"
               width={575}
               height={575}
-              src={`${CLOUDFRONT_URL}/album-cover.jpeg`}
+              src={`/album-cover.jpeg`}
               alt="album cover"
             />
             <div className="flex w-full justify-center">
