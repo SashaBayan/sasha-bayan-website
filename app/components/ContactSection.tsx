@@ -28,10 +28,10 @@ export function ContactSection() {
         <a
           className="flex gap-2"
           target="_blank"
-          href="mailto:booking@sashabayan.com"
+          href="mailto:sasha@sashabayan.com"
         >
           <GoMail className="text-2xl" />
-          <p>booking@sashabayan.com</p>
+          <p>sasha@sashabayan.com</p>
         </a>
       </div>
     </section>
