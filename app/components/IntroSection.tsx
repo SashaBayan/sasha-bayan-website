@@ -42,14 +42,14 @@ export function IntroSection() {
           </div>
           <div className="flex flex-col items-center gap-3 sm:items-start">
             <div className="flex flex-wrap gap-2">
-              <p>New album "enough" dropping Feb 2024!</p>
+              <p>New single "montreux" dropping Dec 15, 2023!</p>
               <button> Get notified.</button>
             </div>
             <Image
               className="-ml-2"
               width={575}
               height={575}
-              src={`/album-cover.jpeg`}
+              src={`/montreux-cover.jpg`}
               alt="album cover"
             />
             <div className="flex w-full justify-center">
