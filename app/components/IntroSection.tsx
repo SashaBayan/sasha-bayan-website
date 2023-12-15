@@ -42,20 +42,33 @@ export function IntroSection() {
           </div>
           <div className="flex flex-col items-center gap-3 sm:items-start">
             <div className="flex flex-wrap gap-2">
-              <p>New single "montreux" dropping Dec 15, 2023!</p>
-              <button> Get notified.</button>
+              <p>New single "montreux" is out!</p>
+              <a
+                target="_blank"
+                href="https://open.spotify.com/track/0Kw1LFODITgdtH8nDiEKmb?si=8bb31deb871942ef&nd=1&dlsi=4be8ea65f75c4e12"
+              >
+                <button className="underline hover:animate-pulse">
+                  {" "}
+                  Listen Now
+                </button>
+              </a>
             </div>
-            <Image
-              className="-ml-2"
-              width={575}
-              height={575}
-              src={`/montreux-cover.jpg`}
-              alt="album cover"
-            />
+            <a
+              target="_blank"
+              href="https://open.spotify.com/track/0Kw1LFODITgdtH8nDiEKmb?si=8bb31deb871942ef&nd=1&dlsi=4be8ea65f75c4e12"
+            >
+              <Image
+                className="-ml-2"
+                width={575}
+                height={575}
+                src={`/montreux-cover.jpg`}
+                alt="album cover"
+              />
+            </a>
             <div className="flex w-full justify-center">
               <Link href="mailing-list">
                 <button className="rounded-3xl bg-white px-5 py-3 text-xl">
-                  Get Notified
+                  Join the Mailing List
                 </button>
               </Link>
             </div>
