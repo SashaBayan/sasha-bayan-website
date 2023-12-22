@@ -2,23 +2,7 @@ import Section from "@/app/components/Section";
 import { FaFacebook, FaInstagram, FaSpotify } from "react-icons/fa";
 import { MdFileDownload, MdLanguage } from "react-icons/md";
 import { GoMail } from "react-icons/go";
-
-function Link({
-  href,
-  icon,
-  copy,
-}: {
-  href: string;
-  icon: React.ReactNode;
-  copy: string;
-}) {
-  return (
-    <a className="flex gap-2 hover:animate-pulse" target="_blank" href={href}>
-      {icon}
-      <p>{copy}</p>
-    </a>
-  );
-}
+import { MediaLink } from "@/app/components/MediaLink";
 
 const mediaLinks = [
   {
@@ -61,7 +45,7 @@ const rightContent = (
     <h1 className="font-glosa-display text-5xl"> Media </h1>
     <div className="flex flex-col gap-5">
       {mediaLinks.map((link, index) => (
-        <Link key={index} {...link} />
+        <MediaLink key={index} {...link} />
       ))}
     </div>
   </div>
@@ -71,7 +55,7 @@ const leftContent = (
   <div className="flex flex-col items-center justify-center gap-3  sm:w-1/2">
     <h1 className="font-glosa-display text-5xl"> Contact </h1>
     {contactLinks.map((link, index) => (
-      <Link key={index} {...link} />
+      <MediaLink key={index} {...link} />
     ))}
   </div>
 );
