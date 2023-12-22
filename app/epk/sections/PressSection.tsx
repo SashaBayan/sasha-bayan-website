@@ -1,7 +1,7 @@
 export function PressSection({
   pressQuotes,
 }: {
-  pressQuotes: { quote: string; author: string; href: string }[];
+  pressQuotes: { quote: string; author: string; href: string; note?: string }[];
 }) {
   return (
     <section className="flex w-full justify-center bg-gradient-to-br from-[#E8E1DD] to-white px-10 pb-10 pt-20">
@@ -18,10 +18,12 @@ function PressQuote({
   author,
   quote,
   href,
+  note,
 }: {
   quote: string;
   author: string;
   href: string;
+  note?: string;
 }) {
   return (
     <div className="mb-10 max-w-md">
@@ -29,8 +31,9 @@ function PressQuote({
         href={href}
         className="block cursor-pointer text-left hover:animate-pulse"
       >
-        <blockquote className="text-2xl font-semibold">{quote}</blockquote>
+        <blockquote className="mb-2 text-2xl font-semibold">{quote}</blockquote>
         <cite className="text-xl font-bold"> - {author}</cite>
+        <p>{note}</p>
       </a>
     </div>
   );

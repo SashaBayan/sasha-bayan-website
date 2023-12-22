@@ -73,8 +73,9 @@ function pressQuotes() {
     {
       author: "Para Pop",
       quote:
-        "“montreux” takes listeners into a world brimming with emotions, where every word and note carries weight and meaning...Sasha Bayan effortlessly leaves a profound and lasting impression on the audience with this song. *(translated from Indonesian)",
+        "“montreux” takes listeners into a world brimming with emotions, where every word and note carries weight and meaning...Sasha Bayan effortlessly leaves a profound and lasting impression on the audience with this song.",
       href: "https://parapop.net/sasha-bayan-montreux/",
+      note: "(translated from Indonesian)",
     },
   ];
 }
