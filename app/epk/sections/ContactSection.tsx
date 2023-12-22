@@ -6,7 +6,7 @@ import { MediaLink } from "@/app/components/MediaLink";
 
 const mediaLinks = [
   {
-    href: "https://www.instagram.com/sasha.bayan",
+    href: "https://open.spotify.com/artist/2cwKhNJE0AFNVtYKhHAgMc",
     icon: <FaSpotify className="text-2xl" />,
     copy: "Sasha Bayan",
   },
