@@ -22,6 +22,7 @@ export default function MontreuxEPK() {
           title="About the Single"
           imgSrc="/montreux-cover.jpg"
           copy={AboutCopy()}
+          href="https://open.spotify.com/artist/2cwKhNJE0AFNVtYKhHAgMc"
         />
         <PressSection pressQuotes={pressQuotes()} />
         <TeamSection />

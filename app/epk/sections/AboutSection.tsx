@@ -4,15 +4,17 @@ export function AboutSection({
   title,
   copy,
   imgSrc,
+  href,
 }: {
   title: string;
   copy: string | React.ReactNode;
   imgSrc: string;
+  href?: string;
 }) {
   return (
     <Section
       leftContent={<LeftContent title={title} copy={copy} />}
-      rightContent={<RightContent imgSrc={imgSrc} />}
+      rightContent={<RightContent imgSrc={imgSrc} href={href} />}
       leftBg="bg-white"
       rightBg="bg-[#E8E1DD]"
       reverse
@@ -35,10 +37,21 @@ function LeftContent({
   );
 }
 
-function RightContent({ imgSrc }: { imgSrc: string }) {
+function RightContent({ imgSrc, href }: { imgSrc: string; href?: string }) {
   return (
-    <div className="h-80 w-80 md:h-96 md:w-96">
-      <img src={imgSrc} alt="album cover" />
+    <div className="mb-5 h-80 w-80 text-center md:h-96 md:w-96">
+      {href ? (
+        <>
+          <a href={href} target="_blank">
+            <img src={imgSrc} alt="album cover" />
+            <button className="mt-5 rounded-3xl bg-white px-5 py-3 text-xl">
+              Listen Now
+            </button>
+          </a>
+        </>
+      ) : (
+        <img src={imgSrc} alt="album cover" />
+      )}
     </div>
   );
 }
