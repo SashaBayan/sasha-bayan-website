@@ -1,6 +1,6 @@
 "use client";
 import { useActiveSection } from "../hooks/useActiveSection";
-const sections = ["home", "music", "bio", "contact"];
+const sections = ["home", "press", "music", "bio", "contact"];
 
 export function NavBar() {
   const activeSection = useActiveSection();

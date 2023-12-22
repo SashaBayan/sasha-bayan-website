@@ -1,5 +1,5 @@
 import Section from "@/app/components/Section";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaSpotify } from "react-icons/fa";
 import { MdFileDownload, MdLanguage } from "react-icons/md";
 import { GoMail } from "react-icons/go";
 
@@ -21,6 +21,11 @@ function Link({
 }
 
 const mediaLinks = [
+  {
+    href: "https://www.instagram.com/sasha.bayan",
+    icon: <FaSpotify className="text-2xl" />,
+    copy: "Sasha Bayan",
+  },
   {
     href: "https://www.instagram.com/sasha.bayan",
     icon: <FaInstagram className="text-2xl" />,
