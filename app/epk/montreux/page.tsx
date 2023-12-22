@@ -3,6 +3,7 @@ import { AboutSection } from "../sections/AboutSection";
 import { TeamSection } from "../sections/TeamSection";
 import { ContactSection } from "../sections/ContactSection";
 import { PressSection } from "../sections/PressSection";
+import { Header } from "../sections/Header";
 
 export default function MontreuxEPK() {
   return (
@@ -13,20 +14,10 @@ export default function MontreuxEPK() {
       </Head>
 
       <main className="flex h-screen w-screen flex-col items-center justify-start scroll-smooth ">
-        <section className="flex w-full justify-center bg-gradient-to-br from-[white] from-50% to-[#E8E1DD] px-10 py-20">
-          <div className="">
-            <div className="w-full">
-              <div className="max-w-2xl text-center">
-                <h1 className="mb-4 text-4xl font-bold">
-                  Sasha Bayan presents "montreux"
-                </h1>
-                <p className="mb-8 text-xl">
-                  A Dreamy Dive into Love and Longing
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Header
+          header={'Sasha Bayan presents "montreux"'}
+          subheader="A Dreamy Dive into Love and Longing"
+        />
         <AboutSection
           title="About the Single"
           imgSrc="/montreux-cover.jpg"

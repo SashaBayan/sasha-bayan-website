@@ -11,7 +11,7 @@ export function Header({
         <div className="w-full">
           <div className="max-w-2xl text-center">
             <h1 className="mb-4 text-4xl font-bold">{header}</h1>
-            <p className="mb-8 text-xl">{subheader}</p>
+            <p className="text-xl">{subheader}</p>
           </div>
         </div>
       </div>
