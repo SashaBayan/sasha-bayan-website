@@ -21,7 +21,7 @@ export default function MontreuxEPK() {
                   Sasha Bayan presents "montreux"
                 </h1>
                 <p className="mb-8 text-xl">
-                  An Dreamy Dive into Love and Longing
+                  A Dreamy Dive into Love and Longing
                 </p>
               </div>
             </div>
