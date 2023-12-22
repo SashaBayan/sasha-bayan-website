@@ -31,7 +31,7 @@ export function ContactSection() {
           href="mailto:sasha@sashabayan.com"
         >
           <GoMail className="text-2xl" />
-          <p>sasha@sashabayan.com</p>
+          <p>booking@sashabayan.com</p>
         </a>
       </div>
     </section>
