@@ -22,7 +22,7 @@ const leftContent = (
 const rightContent = (
   <>
     <div className="flex flex-col items-center gap-2">
-      <h2 className="mb-4 text-2xl font-semibold">The Team Behind The Album</h2>
+      <h2 className="mb-4 text-2xl font-semibold">The Team Behind The Music</h2>
       <p className="mb-2 max-w-md text-center">
         The album involved an ensemble of world-class artists and engineers who
         each contributed their creative genius.
@@ -104,16 +104,6 @@ export function TeamLists() {
 
   const production = [
     {
-      role: "Sound Engineer",
-      name: "Scott Steinman",
-      website: "https://studiomediarecording.com/music.html",
-    },
-    {
-      role: "Production Consultant",
-      name: "Kitt Lyles",
-      website: "https://www.kittlylesmusic.com/",
-    },
-    {
       role: "Mix Engineer",
       name: "Javier Veldeavellano",
       website: "https://javillano.com/",
@@ -122,6 +112,16 @@ export function TeamLists() {
       role: "Mastering Engineer",
       name: "JP Berreondo",
       website: "https://asonicworld.com/",
+    },
+    {
+      role: "Recording Engineer",
+      name: "Scott Steinman",
+      website: "https://studiomediarecording.com/music.html",
+    },
+    {
+      role: "Production Consultant",
+      name: "Kitt Lyles",
+      website: "https://www.kittlylesmusic.com/",
     },
   ];
 
