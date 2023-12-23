@@ -39,18 +39,18 @@ function LeftContent({
 
 function RightContent({ imgSrc, href }: { imgSrc: string; href?: string }) {
   return (
-    <div className="mb-5 h-80 w-80 text-center md:h-96 md:w-96">
+    <div className="my-10 h-80 w-80 text-center md:h-96 md:w-96">
       {href ? (
         <>
           <a href={href} target="_blank">
-            <img src={imgSrc} alt="album cover" />
+            <img src={imgSrc} alt="music artwork" />
             <button className="mt-5 rounded-3xl bg-white px-5 py-3 text-xl">
               Listen Now
             </button>
           </a>
         </>
       ) : (
-        <img src={imgSrc} alt="album cover" />
+        <img src={imgSrc} alt="music artwork" />
       )}
     </div>
   );
