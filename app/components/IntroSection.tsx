@@ -61,7 +61,7 @@ export function IntroSection() {
                 className="-ml-2"
                 width={575}
                 height={575}
-                src={`/montreux-cover.jpg`}
+                src={`/montreux.jpg`}
                 alt="album cover"
               />
             </a>
