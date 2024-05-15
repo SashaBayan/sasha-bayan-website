@@ -31,6 +31,7 @@ function PressQuote({
       <a
         href={href}
         className="block cursor-pointer text-left hover:animate-pulse"
+        target="_blank"
       >
         <blockquote className="mb-2 text-2xl font-semibold">{quote}</blockquote>
         <cite className="text-xl font-bold"> - {author}</cite>

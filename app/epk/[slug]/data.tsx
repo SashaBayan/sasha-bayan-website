@@ -62,7 +62,7 @@ const pressQuoteDictionary: PressQuoteDictionary = {
     {
       author: "Clout",
       quote:
-        "a thoughtful and nuanced artist who’s eclectic sound and introspective lyrics set him apart",
+        "...a thoughtful and nuanced artist who’s eclectic sound and introspective lyrics set him apart",
       href: "https://cloutcloutclout.com/new-music/sacha-bayan-lucid/",
     },
     {
