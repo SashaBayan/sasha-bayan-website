@@ -18,6 +18,7 @@ interface EPK {
   subheader: string;
   about: AboutSection;
   pressQuotes: PressQuote[];
+  stats: string[];
 }
 
 interface EPKs {
@@ -79,6 +80,25 @@ const pressQuoteDictionary: PressQuoteDictionary = {
   ],
 };
 
+interface StatsDictionary {
+  [key: string]: string[];
+}
+
+const statsDictionary: StatsDictionary = {
+  falling: [],
+  lucid: [],
+  wandering: [],
+
+  montreux: ["11k+ streams on Spotify"],
+  geneva: [],
+  memories: [],
+  boundless: [],
+  maybe: [],
+  gone: [],
+  tomorrow: ["10k+ streams on Spotify"],
+  enough: ["25k+ streams on Spotify"],
+};
+
 function createEPK({
   title,
   copy,
@@ -101,6 +121,7 @@ function createEPK({
       songHref,
     },
     pressQuotes: pressQuoteDictionary[title],
+    stats: statsDictionary[title],
   };
 }
 

@@ -5,6 +5,7 @@ import { TeamSection } from "../sections/TeamSection";
 import { ContactSection } from "../sections/ContactSection";
 import { epks } from "./data";
 import Head from "next/head";
+import { StatsSection } from "../sections/StatsSection";
 
 export default function EPKPage({
   params: { slug },
@@ -22,6 +23,7 @@ export default function EPKPage({
     subheader,
     about: { title: aboutTitle, imgSrc, copy, songHref },
     pressQuotes,
+    stats,
   } = epks[slug];
 
   return (
@@ -40,6 +42,7 @@ export default function EPKPage({
         {pressQuotes.length > 0 ? (
           <PressSection pressQuotes={pressQuotes} />
         ) : null}
+        {stats.length > 0 ? <StatsSection stats={stats} /> : null}
         <TeamSection />
         <ContactSection />
       </main>
