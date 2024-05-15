@@ -58,7 +58,25 @@ const pressQuoteDictionary: PressQuoteDictionary = {
   boundless: [],
   maybe: [],
   gone: [],
-  tomorrow: [],
+  tomorrow: [
+    {
+      author: "Obscure Sound",
+      quote:
+        "“tomorrow” is full of gripping sequences and heart-on-sleeve introspection.",
+      href: "https://www.obscuresound.com/2024/01/sasha-bayan-tomorrow/",
+    },
+    {
+      author: "Radio Castor",
+      quote: "...an enchanting voice and a moving melody",
+      href: "https://www.radiocastor.com/index.php/sasha-bayan-plonge-dans-les-nuances-du-chagrin-et-evoque-le-voyage-de-guerison-dans-son-titre-tomorrow/",
+    },
+    {
+      author: "SoulWaves",
+      quote:
+        "‘Tomorrow’...captures the essence of overcoming grief and clinging to hope.",
+      href: "https://soulwavez.com/picaros-estrena-bien-entre-otros-lanzamientos-musicales/",
+    },
+  ],
   enough: [
     {
       author: "Clout",
