@@ -35,17 +35,36 @@ export function IntroSection() {
                 Sasha Bayan is a multifaceted musician known for his
                 introspective songwriting and global musical influences. With a
                 deep background in classical and world music, Sasha's work,
-                including his album "enough," explores themes of love, loss, and
-                self-discovery. As the bandleader and sitar player for{" "}
-                <a target="_blank" href="musicbyhightide.com">
+                including his album "
+                <a
+                  className="font-bold underline hover:animate-pulse"
+                  target="_blank"
+                  href="https://open.spotify.com/album/70xurRaRvInn6h7KL07GcT?si=xQva3HReSV6fLg7goLaMxQs"
+                >
+                  enough
+                </a>
+                " , explores themes of love, loss, and self-discovery. As the
+                bandleader and sitar player for{" "}
+                <a
+                  className="font-bold underline hover:animate-pulse"
+                  target="_blank"
+                  href="musicbyhightide.com"
+                >
                   High Tide
                 </a>
-                , he fuses world music elements with indie sounds, creating
-                immersive musical experiences. Sasha's rich musical tapestry
-                reflects his studies in guitar and composition at Northwestern
-                University and his exploration of Flamenco, Brazilian, and
-                Indian Classical music. His music offers a unique and heartfelt
-                journey through the universal human experience.
+                , he fuses world music elements with contemporary composition,
+                creating immersive musical experiences. Sasha's rich musical
+                tapestry reflects his studies in guitar and composition at{" "}
+                <a
+                  className="font-bold underline hover:animate-pulse"
+                  target="_blank"
+                  href="https://www.northwestern.edu/magazine//summer2013/feature/standout-seniors-sidebar/sasha-bayan.html"
+                >
+                  Northwestern University
+                </a>{" "}
+                and his exploration of Flamenco, Brazilian, and Indian Classical
+                music. His music offers a unique and heartfelt journey through
+                the human experience.
               </p>
             </div>
           </div>
