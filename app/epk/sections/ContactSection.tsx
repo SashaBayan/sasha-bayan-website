@@ -26,7 +26,8 @@ const mediaLinks = [
     copy: "sashabayan.com",
   },
   {
-    href: "https://www.dropbox.com/scl/fo/aigzqwzhzu3go0i1wiyhn/h?rlkey=smsi7biu8crfiezq6k2bi3v6y&dl=0",
+    // href: "https://www.dropbox.com/scl/fo/aigzqwzhzu3go0i1wiyhn/h?rlkey=smsi7biu8crfiezq6k2bi3v6y&dl=0",
+    href: "https://drive.google.com/drive/folders/14AkGk-QcHIoThQNynJKfVygm6eopO6S2?usp=drive_link",
     icon: <MdFileDownload className="text-2xl" />,
     copy: "Download Press Photos",
   },
