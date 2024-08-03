@@ -1,5 +1,5 @@
 "use client";
-import { FaFacebook, FaInstagram, FaSpotify } from "react-icons/fa";
+import { FaEnvelope, FaFacebook, FaInstagram, FaSpotify } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { MediaLink } from "./MediaLink";
 
@@ -50,6 +50,11 @@ function mediaLinks() {
       href: "https://www.facebook.com/sashabayanmusic/",
       icon: <FaFacebook className="text-2xl" />,
       copy: "sashabayanmusic",
+    },
+    {
+      href: "/mailing-list",
+      icon: <FaEnvelope className="text-2xl" />,
+      copy: "Join the mailing list",
     },
   ];
 }
