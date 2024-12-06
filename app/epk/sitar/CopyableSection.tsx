@@ -8,6 +8,7 @@ interface CopyableSectionProps {
 
 export function CopyableSection({ title, content }: CopyableSectionProps) {
   const [copied, setCopied] = useState(false);
+  const [showAll, setShowAll] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(content);
@@ -15,9 +16,12 @@ export function CopyableSection({ title, content }: CopyableSectionProps) {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const paragraphs = content.split("\n").filter((p) => p.trim() !== ""); // Ensure no empty paragraphs
+  const visibleContent = showAll ? paragraphs : paragraphs.slice(0, 1); // Show either all paragraphs or the first one
+
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="flex items-center space-x-2">
+      <div className="mb-3 flex items-center space-x-2 ">
         <h2 className="text-2xl font-semibold">{title}</h2>
         <button
           className="mb-1 flex items-center text-gray-500 hover:text-gray-800"
@@ -39,11 +43,22 @@ export function CopyableSection({ title, content }: CopyableSectionProps) {
         </span>
       </div>
       <div className="flex flex-col gap-2 text-sm">
-        {content.split("\n").map((paragraph, idx) => (
-          <div className="" key={idx}>
+        {/* Render visible paragraphs */}
+        {visibleContent.map((paragraph, idx) => (
+          <p className="text-gray-700" key={idx}>
             {paragraph}
-          </div>
+          </p>
         ))}
+
+        {/* Toggle button for expandable content */}
+        {paragraphs.length > 1 && (
+          <button
+            className="mt-2 text-sm text-blue-500 hover:underline"
+            onClick={() => setShowAll((prev) => !prev)}
+          >
+            {showAll ? "Show Less" : "Show All"}
+          </button>
+        )}
       </div>
     </div>
   );
