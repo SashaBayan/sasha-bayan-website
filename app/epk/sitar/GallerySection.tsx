@@ -24,7 +24,7 @@ export function GallerySection() {
       <div className="flex items-center space-x-3">
         <h2 className="text-2xl font-semibold">Photos</h2>
         <a
-          href="/api/download-all"
+          href="/api/download-all-sitar-epk-photos"
           className="flex items-center space-x-1 text-gray-500 hover:text-gray-800"
         >
           <MdFileDownload className="text-2xl" />
