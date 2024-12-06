@@ -1,9 +1,14 @@
 "use client";
+import { CLOUDFRONT_URL } from "@/app/constants/urls";
 import { ContactSection } from "../sections/ContactSection";
 import { Header } from "../sections/Header";
 import { CopyableSection } from "./CopyableSection";
 import { LONG_BIO, SHORT_BIO, TAGLINE } from "./data";
 import { Section } from "./Section";
+import Image from "next/image";
+import { GallerySection } from "./GallerySection";
+
+const images = ["/"];
 
 export default function SitarEPKPage() {
   return (
@@ -23,7 +28,7 @@ export default function SitarEPKPage() {
               <CopyableSection title="Long Bio" content={LONG_BIO} />
             </div>
           }
-          rightContent={<div> baller</div>}
+          rightContent={<GallerySection />}
         />
         <Section
           reverse
