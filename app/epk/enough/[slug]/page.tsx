@@ -1,11 +1,11 @@
-import { Header } from "../sections/Header";
-import { AboutSection } from "../sections/AboutSection";
-import { PressSection } from "../sections/PressSection";
-import { TeamSection } from "../sections/TeamSection";
-import { ContactSection } from "../sections/ContactSection";
+import { Header } from "../../sections/Header";
+import { AboutSection } from "../../sections/AboutSection";
+import { PressSection } from "../../sections/PressSection";
+import { TeamSection } from "../../sections/TeamSection";
+import { ContactSection } from "../../sections/ContactSection";
 import { epks } from "./data";
 import Head from "next/head";
-import { StatsSection } from "../sections/StatsSection";
+import { StatsSection } from "../../sections/StatsSection";
 
 export default function EPKPage({
   params: { slug },
