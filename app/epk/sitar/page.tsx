@@ -5,11 +5,9 @@ import { Header } from "../sections/Header";
 import { CopyableSection } from "./CopyableSection";
 import { LONG_BIO, SHORT_BIO, TAGLINE } from "./data";
 import { Section } from "./Section";
-import Image from "next/image";
 import { GallerySection } from "./GallerySection";
 import { VideoSectionEPK } from "./VideoSection";
-
-const images = ["/"];
+import { AudioSection } from "./AudioSection";
 
 export default function SitarEPKPage() {
   return (
@@ -35,7 +33,7 @@ export default function SitarEPKPage() {
         <Section
           reverse
           leftContent={<VideoSectionEPK />}
-          rightContent={<div> baller</div>}
+          rightContent={<AudioSection />}
         />
         <ContactSection />
       </main>
