@@ -31,7 +31,7 @@ export function GallerySection() {
           <span className="text-sm">Download All</span>
         </a>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-3">
         {images.map((image) => (
           <a
             href={image.src}
