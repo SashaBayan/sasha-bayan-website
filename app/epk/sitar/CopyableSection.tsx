@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoCopy, IoCopyOutline } from "react-icons/io5";
 
 interface CopyableSectionProps {
   title: string;
@@ -21,14 +22,19 @@ export function CopyableSection({ title, content }: CopyableSectionProps) {
   return (
     <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
       {/* Title and CTA */}
-      <div className="md:items-left col-span-1 flex flex-col items-start">
+      <div className=" col-span-1 flex flex-col items-start">
         <h3 className="text-xl font-semibold">{title}</h3>
         <button
           onClick={handleCopy}
-          className="mt-2 text-sm text-blue-500 hover:underline"
+          className="mt-2 flex items-center space-x-2 text-sm text-gray-500 hover:text-gray-800"
           aria-label={`Copy ${title}`}
         >
-          {copied ? "Copied!" : "Copy"}
+          {copied ? (
+            <IoCopy size={18} className="text-gray-500" />
+          ) : (
+            <IoCopyOutline size={18} className="text-gray-500" />
+          )}
+          <span>{copied ? "Copied!" : "Copy"}</span>
         </button>
       </div>
 
@@ -42,7 +48,7 @@ export function CopyableSection({ title, content }: CopyableSectionProps) {
 
         {paragraphs.length > 1 && (
           <button
-            className="mt-2 text-sm text-blue-500 hover:underline"
+            className="mt-2 text-sm text-gray-500 hover:underline"
             onClick={() => setShowAll((prev) => !prev)}
           >
             {showAll ? "Show Less" : "Show All"}
