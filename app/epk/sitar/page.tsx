@@ -7,6 +7,7 @@ import { LONG_BIO, SHORT_BIO, TAGLINE } from "./data";
 import { Section } from "./Section";
 import Image from "next/image";
 import { GallerySection } from "./GallerySection";
+import { VideoSectionEPK } from "./VideoSection";
 
 const images = ["/"];
 
@@ -32,7 +33,7 @@ export default function SitarEPKPage() {
         />
         <Section
           reverse
-          leftContent={<div className="flex justify-center">holler</div>}
+          leftContent={<VideoSectionEPK />}
           rightContent={<div> baller</div>}
         />
         <ContactSection />
