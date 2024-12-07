@@ -1,13 +1,12 @@
 "use client";
-import { CLOUDFRONT_URL } from "@/app/constants/urls";
-import { ContactSection } from "../sections/ContactSection";
 import { Header } from "../sections/Header";
 import { CopyableSection } from "./CopyableSection";
 import { LONG_BIO, SHORT_BIO, TAGLINE } from "./data";
 import { Section } from "./Section";
 import { GallerySection } from "./GallerySection";
-import { VideoSectionEPK } from "./VideoSection";
-import { AudioSection } from "./AudioSection";
+import { FollowSection } from "./FollowSection";
+import { BookSection } from "./BookSection";
+import { Footer } from "@/app/components/Footer";
 
 export default function SitarEPKPage() {
   return (
@@ -32,10 +31,10 @@ export default function SitarEPKPage() {
         />
         <Section
           reverse
-          leftContent={<VideoSectionEPK />}
-          rightContent={<AudioSection />}
+          leftContent={<FollowSection />}
+          rightContent={<BookSection />}
         />
-        <ContactSection />
+        <Footer />
       </main>
     </>
   );
