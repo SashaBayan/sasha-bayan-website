@@ -7,6 +7,8 @@ import { GallerySection } from "./GallerySection";
 import { FollowSection } from "./FollowSection";
 import { BookSection } from "./BookSection";
 import { Footer } from "@/app/components/Footer";
+import { VideoSectionEPK } from "./VideoSection";
+import { AudioSection } from "./AudioSection";
 
 export default function SitarEPKPage() {
   return (
@@ -30,9 +32,11 @@ export default function SitarEPKPage() {
       />
       <Section
         reverse
-        leftContent={<FollowSection />}
-        rightContent={<BookSection />}
+        leftContent={<VideoSectionEPK />}
+        rightContent={<AudioSection />}
       />
+      <Section leftContent={<FollowSection />} rightContent={<BookSection />} />
+
       <Footer />
     </main>
   );
