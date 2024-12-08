@@ -5,12 +5,12 @@ import { useAudioPlayer } from "@/app/hooks/useAudioPlayer";
 
 const tracks = [
   {
-    src: "/kava-on-carl.wav",
-    trackName: "Kava on Carl",
-  },
-  {
     src: "/atash-abi.wav",
     trackName: "Átash Ábi",
+  },
+  {
+    src: "/kava-on-carl.wav",
+    trackName: "Kava on Carl",
   },
 ];
 
