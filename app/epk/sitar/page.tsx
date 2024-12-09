@@ -20,7 +20,8 @@ export default function SitarEPKPage() {
         }
       />
       <Section
-        leftContent={
+        leftContent={<GallerySection />}
+        rightContent={
           <div className="flex flex-col items-center justify-center gap-5 px-10">
             <h2 className="text-2xl font-semibold">About</h2>
             <CopyableSection title="Tagline" content={TAGLINE} />
@@ -28,7 +29,6 @@ export default function SitarEPKPage() {
             <CopyableSection title="Long Bio" content={LONG_BIO} />
           </div>
         }
-        rightContent={<GallerySection />}
       />
       <Section
         reverse
