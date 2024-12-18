@@ -12,6 +12,7 @@ interface ShowCardProps {
   startTime: string;
   endTime?: string;
   ticketLink?: string;
+  note?: string;
 }
 
 const ShowCard: React.FC<ShowCardProps> = ({
@@ -23,6 +24,7 @@ const ShowCard: React.FC<ShowCardProps> = ({
   startTime,
   endTime,
   ticketLink,
+  note,
 }) => {
   //   const calendarFileUrl = generateCalendarFile({
   //     date,
@@ -72,6 +74,7 @@ const ShowCard: React.FC<ShowCardProps> = ({
             {startTime}
             {endTime ? ` - ${endTime}` : ""}
           </p>
+          {note ? <p>{note}</p> : null}
           <p>{description}</p>
         </div>
       </div>

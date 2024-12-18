@@ -6,8 +6,8 @@ export const shows = [
       "Join me at The Center SF for an evening of original compositions, improvisation, and good vibes with my world music fusion band High Tide!",
     venue: "The Center SF",
     address: "548 Fillmore St, San Francisco, CA",
-    startTime: "7:30pm",
-    endTime: "9pm",
+    startTime: "19:30", // 7:30pm
+    endTime: "21:00", // 9pm
     ticketLink:
       "https://www.eventbrite.com/e/high-tide-world-music-sitar-fusion-band-tickets-1114567283749?aff=oddtdtcreator&mc_cid=54fbf6c700&mc_eid=a809b44e71",
   },
@@ -18,8 +18,9 @@ export const shows = [
       "Another performance with High Tide -- we’ll close out the evening at Midwinter Magic at the SF Unitarian Center.",
     venue: "SF Unitarian Center",
     address: "1187 Franklin St, San Francisco, CA",
-    startTime: "7pm",
-    endTime: "2am (High Tide goes on at 12:30AM)",
+    startTime: "19:00", // 7:00pm
+    endTime: "02:00", // 2:00am
+    note: "High Tide goes on at 12:30AM.", // Note for additional context
     ticketLink: "https://www.ticketfairy.com/event/midwintermagic2024?r=msg",
   },
   {
@@ -29,8 +30,8 @@ export const shows = [
       "Join me for a special sound healing session with Lisa Rueff at Zense SF. Let’s get our zen on.",
     venue: "Zense SF",
     address: "540 Howard St, San Francisco, CA",
-    startTime: "6:30pm",
-    endTime: "8pm",
+    startTime: "18:30", // 6:30pm
+    endTime: "20:00", // 8pm
     ticketLink:
       "https://www.eventbrite.com/e/winter-solstice-soundbath-zenses-immersive-tickets-1106029787869?aff=oddtdtcreator",
   },
@@ -38,11 +39,12 @@ export const shows = [
     date: "2024-12-20",
     title: "Solo Sitar at the Laundry",
     description:
-      "Join us for a magical evening to celebrate Shabe Yalda, the Persian Winter Solstice Festival! ",
+      "Join us for a magical evening to celebrate Shabe Yalda, the Persian Winter Solstice Festival!",
     venue: "The Laundry",
     address: "3359 26th St, San Francisco, CA 94110",
-    startTime: "6pm",
-    endTime: "10pm (performance from 6-7)",
+    startTime: "18:00", // 6:00pm
+    endTime: "22:00", // 10pm
+    note: "Performance from 6-7pm.", // Note for performance timing
     ticketLink: "https://partiful.com/e/2CqWgffPeQB85qZlvNDu?",
   },
 ];
