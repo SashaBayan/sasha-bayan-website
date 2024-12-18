@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { shows } from "./data";
-import Link from "next/link";
+import ShowCard from "../components/ShowCard";
 
 const ShowsPage = () => {
   const [showPast, setShowPast] = useState(false);
@@ -30,31 +30,21 @@ const ShowsPage = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="h-screen w-screen bg-[#E8E1DD]">
+    <div className="h-screen w-screen bg-primary">
       <div className="container mx-auto px-4 py-8">
         <h1 className="mb-8 text-center text-4xl font-bold">Upcoming Shows</h1>
         <div className="space-y-6">
           {currentUpcomingShows.length > 0 ? (
             currentUpcomingShows.map((show, index) => (
-              <div
+              <ShowCard
                 key={index}
-                className="rounded-lg border bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <p className="text-sm text-gray-500">
-                  {new Date(show.date).toLocaleDateString()}
-                </p>
-                <h2 className="mt-2 text-2xl font-semibold">{show.title}</h2>
-                <p className="mt-2 text-gray-700">{show.description}</p>
-                <p className="mt-4 font-medium">Venue: {show.venue}</p>
-                <p className="text-gray-600">{show.address}</p>
-                <Link
-                  href={show.ticketLink}
-                  className="mt-4 inline-block text-blue-500 hover:cursor-pointer hover:underline"
-                  target="_blank"
-                >
-                  Get Tickets
-                </Link>
-              </div>
+                date={show.date}
+                title={show.title}
+                description={show.description}
+                venue={show.venue}
+                address={show.address}
+                ticketLink={show.ticketLink}
+              />
             ))
           ) : (
             <p className="text-center text-gray-500">
@@ -85,7 +75,7 @@ const ShowsPage = () => {
         )}
 
         {/* Toggle Past Shows */}
-        <div className="mt-8 text-center ">
+        <div className="mt-8 text-center">
           <button
             onClick={() => setShowPast(!showPast)}
             className="rounded-lg bg-gray-700 px-4 py-2 text-white hover:bg-gray-600 focus:outline-none"
@@ -98,20 +88,17 @@ const ShowsPage = () => {
         {showPast && (
           <div className="mt-8 bg-[#E8E1DD]">
             <h2 className="mb-4 text-center text-3xl font-bold">Past Shows</h2>
-            <div className="space-y-6 ">
+            <div className="space-y-6">
               {pastShows.map((show, index) => (
-                <div
+                <ShowCard
                   key={index}
-                  className="rounded-lg border bg-gray-100  p-6 shadow-sm"
-                >
-                  <p className="text-sm text-gray-500">
-                    {new Date(show.date).toLocaleDateString()}
-                  </p>
-                  <h2 className="mt-2 text-2xl font-semibold">{show.title}</h2>
-                  <p className="mt-2 text-gray-700">{show.description}</p>
-                  <p className="mt-4 font-medium">Venue: {show.venue}</p>
-                  <p className="text-gray-600">{show.address}</p>
-                </div>
+                  date={show.date}
+                  title={show.title}
+                  description={show.description}
+                  venue={show.venue}
+                  address={show.address}
+                  isPast
+                />
               ))}
             </div>
           </div>
