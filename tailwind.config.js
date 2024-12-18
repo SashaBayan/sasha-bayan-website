@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#E8E1DD",
+        dark: "#332A2A",
       },
       fontFamily: {
         akkurat: ["Akkurat", "Arial", "Helvetica", "sans-serif"],

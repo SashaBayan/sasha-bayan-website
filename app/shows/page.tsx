@@ -30,8 +30,8 @@ const ShowsPage = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="h-screen w-screen bg-primary">
-      <div className="container mx-auto px-4 py-8">
+    <div className="flex h-screen w-screen justify-center bg-primary">
+      <div className=" px-4 py-8">
         <h1 className="mb-8 text-center text-4xl font-bold">Upcoming Shows</h1>
         <div className="space-y-6">
           {currentUpcomingShows.length > 0 ? (

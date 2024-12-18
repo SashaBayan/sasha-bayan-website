@@ -20,27 +20,27 @@ const ShowCard: React.FC<ShowCardProps> = ({
   address,
   ticketLink,
 }) => (
-  <div className="rounded-lg border border-gray-200 bg-[#F9F8F6] px-6 py-4 shadow-sm">
+  <div className="p max-w-5xl rounded-lg border border-gray-200  bg-[#F9F8F6] px-10 py-7 pr-24 text-dark shadow-sm">
     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
       {/* Left Section: Date, Title, and Buttons */}
-      <div className="flex flex-col gap-2 sm:w-1/2">
-        <p className="text-sm font-semibold text-gray-600">
-          {format(new Date(date), "MM.dd.yyyy")}
-        </p>
-        <h2 className="text-2xl font-extrabold text-gray-900">{title}</h2>
+      <div className="flex flex-col gap-3 sm:w-1/2">
+        <div className="flex flex-col gap-2">
+          <p className="text-base font-semibold text-dark">
+            {format(new Date(date), "MM.dd.yyyy")}
+          </p>
+          <h2 className="text-2xl font-bold text-dark">{title}</h2>
+        </div>
 
         {/* Buttons */}
-        <div className="mt-4 flex gap-3">
-          <Link
-            href={ticketLink || "#"}
-            target="_blank"
-            className="rounded-full bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-300"
-          >
-            Get tickets
+        <div className="flex gap-3">
+          <Link href={ticketLink || "#"} target="_blank">
+            <button className="rounded-full bg-primary px-4 py-3 text-sm hover:bg-gray-300">
+              Get tickets
+            </button>
           </Link>
           <button
             onClick={() => alert("Add to calendar clicked!")}
-            className="rounded-full border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+            className="rounded-full border border-primary px-4 py-3 text-sm hover:bg-gray-100"
           >
             Add to calendar
           </button>
@@ -48,11 +48,13 @@ const ShowCard: React.FC<ShowCardProps> = ({
       </div>
 
       {/* Right Section: Venue, Address, Time, and Description */}
-      <div className="flex flex-col gap-1 sm:w-1/2">
-        <p className="font-semibold text-gray-800">{venue}</p>
-        <p className="text-gray-600">{address}</p>
-        <p className="font-bold text-gray-800">7pm - 8pm</p>
-        <p className="mt-2 text-gray-700">{description}</p>
+      <div className="flex flex-col gap-3 sm:w-1/2">
+        <div>
+          <p className="font-semibold">{venue}</p>
+          <p>{address}</p>
+        </div>
+        <p className="font-bold">7pm - 8pm</p>
+        <p>{description}</p>
       </div>
     </div>
   </div>
