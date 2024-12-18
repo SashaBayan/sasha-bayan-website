@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { format } from "date-fns";
+import { format, parse } from "date-fns";
 
 interface ShowCardProps {
   date: string;
@@ -9,11 +9,20 @@ interface ShowCardProps {
   description: string;
   venue: string;
   address: string;
-  startTime: string;
-  endTime?: string;
+  startTime: string; // e.g., "19:30" or "07:30pm"
+  endTime?: string; // e.g., "21:00" or "09:00pm"
   ticketLink?: string;
   note?: string;
 }
+
+const formatTime = (time: string): string => {
+  try {
+    const parsedTime = parse(time, "HH:mm", new Date());
+    return format(parsedTime, "h:mma").toLowerCase(); // e.g., "7:30 PM"
+  } catch {
+    return time; // Fallback to raw time if parsing fails
+  }
+};
 
 const ShowCard: React.FC<ShowCardProps> = ({
   date,
@@ -26,17 +35,8 @@ const ShowCard: React.FC<ShowCardProps> = ({
   ticketLink,
   note,
 }) => {
-  //   const calendarFileUrl = generateCalendarFile({
-  //     date,
-  //     startTime,
-  //     endTime,
-  //     title,
-  //     description,
-  //     location: `${venue}, ${address}`,
-  //   });
-
   return (
-    <div className="max-w-5xl rounded-lg border border-gray-200 bg-[#F9F8F6] p-7 text-dark shadow-sm sm:px-10 sm:py-7 ">
+    <div className="max-w-5xl rounded-lg border border-gray-200 bg-[#F9F8F6] p-7 text-dark shadow-sm sm:px-10 sm:py-7">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         {/* Left Section: Date, Title, and Buttons */}
         <div className="flex flex-col gap-3 sm:w-1/2">
@@ -54,13 +54,6 @@ const ShowCard: React.FC<ShowCardProps> = ({
                 Get tickets
               </button>
             </Link>
-            {/* <Link
-              href={calendarFileUrl}
-              download={`${title.replace(/ /g, "_")}.ics`}
-              className="rounded-full border border-primary px-4 py-3 text-center text-sm hover:bg-gray-100"
-            >
-              Add to calendar
-            </Link> */}
           </div>
         </div>
 
@@ -71,8 +64,8 @@ const ShowCard: React.FC<ShowCardProps> = ({
             <p>{address}</p>
           </div>
           <p className="font-bold">
-            {startTime}
-            {endTime ? ` - ${endTime}` : ""}
+            {formatTime(startTime)}
+            {endTime ? ` - ${formatTime(endTime)}` : ""}
           </p>
           {note ? <p>{note}</p> : null}
           <p>{description}</p>
