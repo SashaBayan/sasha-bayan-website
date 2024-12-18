@@ -36,7 +36,7 @@ const ShowCard: React.FC<ShowCardProps> = ({
   note,
 }) => {
   return (
-    <div className="max-w-5xl rounded-lg border border-gray-200 bg-[#F9F8F6] p-7 text-dark shadow-sm sm:px-10 sm:py-7">
+    <div className="max-w-5xl rounded-md border border-gray-200 bg-[#F9F8F6] p-7 text-dark shadow-sm sm:px-10 sm:py-7">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         {/* Left Section: Date, Title, and Buttons */}
         <div className="flex flex-col gap-3 sm:w-1/2">
