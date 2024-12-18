@@ -97,7 +97,7 @@ const ShowsPage = () => {
                   description={show.description}
                   venue={show.venue}
                   address={show.address}
-                  isPast
+                  // isPast
                 />
               ))}
             </div>
