@@ -28,4 +28,13 @@ export const shows = [
     ticketLink:
       "https://www.eventbrite.com/e/winter-solstice-soundbath-zenses-immersive-tickets-1106029787869?aff=oddtdtcreator",
   },
+  {
+    date: "2024-12-20",
+    title: "Solo Sitar Performance to Celebrate Shabe Yalda",
+    description:
+      "Join us for a magical evening to celebrate Shabe Yalda, the Persian Winter Solstice Festival! This special night marks the longest night of the year and is traditionally filled with poetry, music, storytelling, and the warmth of community. Sasha Bayan will be performing sitar as part of a cultural performance during the event.",
+    venue: "The Laundry",
+    address: "3359 26th St, San Francisco, CA 94110",
+    ticketLink: "https://partiful.com/e/2CqWgffPeQB85qZlvNDu?",
+  },
 ];
