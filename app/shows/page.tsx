@@ -36,15 +36,7 @@ const ShowsPage = () => {
         <div className="space-y-6">
           {currentUpcomingShows.length > 0 ? (
             currentUpcomingShows.map((show, index) => (
-              <ShowCard
-                key={index}
-                date={show.date}
-                title={show.title}
-                description={show.description}
-                venue={show.venue}
-                address={show.address}
-                ticketLink={show.ticketLink}
-              />
+              <ShowCard key={index} {...show} />
             ))
           ) : (
             <p className="text-center text-gray-500">
@@ -90,15 +82,7 @@ const ShowsPage = () => {
             <h2 className="mb-4 text-center text-3xl font-bold">Past Shows</h2>
             <div className="space-y-6">
               {pastShows.map((show, index) => (
-                <ShowCard
-                  key={index}
-                  date={show.date}
-                  title={show.title}
-                  description={show.description}
-                  venue={show.venue}
-                  address={show.address}
-                  // isPast
-                />
+                <ShowCard key={index} {...show} />
               ))}
             </div>
           </div>

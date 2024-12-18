@@ -9,6 +9,8 @@ interface ShowCardProps {
   description: string;
   venue: string;
   address: string;
+  startTime: string;
+  endTime?: string;
   ticketLink?: string;
 }
 
@@ -18,9 +20,11 @@ const ShowCard: React.FC<ShowCardProps> = ({
   description,
   venue,
   address,
+  startTime,
+  endTime,
   ticketLink,
 }) => (
-  <div className="p max-w-5xl rounded-lg border border-gray-200  bg-[#F9F8F6] px-10 py-7 pr-24 text-dark shadow-sm">
+  <div className="max-w-5xl rounded-lg border border-gray-200 bg-[#F9F8F6] px-10 py-7 pr-24 text-dark shadow-sm">
     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
       {/* Left Section: Date, Title, and Buttons */}
       <div className="flex flex-col gap-3 sm:w-1/2">
@@ -53,7 +57,10 @@ const ShowCard: React.FC<ShowCardProps> = ({
           <p className="font-semibold">{venue}</p>
           <p>{address}</p>
         </div>
-        <p className="font-bold">7pm - 8pm</p>
+        <p className="font-bold">
+          {startTime}
+          {endTime ? ` - ${endTime}` : ""}
+        </p>
         <p>{description}</p>
       </div>
     </div>
