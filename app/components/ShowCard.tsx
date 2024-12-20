@@ -9,8 +9,8 @@ interface ShowCardProps {
   description: string;
   venue: string;
   address: string;
-  startTime: string; // e.g., "19:30" or "07:30pm"
-  endTime?: string; // e.g., "21:00" or "09:00pm"
+  startTime: string;
+  endTime?: string;
   ticketLink?: string;
   note?: string;
 }
@@ -18,9 +18,9 @@ interface ShowCardProps {
 const formatTime = (time: string): string => {
   try {
     const parsedTime = parse(time, "HH:mm", new Date());
-    return format(parsedTime, "h:mma").toLowerCase(); // e.g., "7:30 PM"
+    return format(parsedTime, "h:mma").toLowerCase();
   } catch {
-    return time; // Fallback to raw time if parsing fails
+    return time;
   }
 };
 
@@ -35,19 +35,20 @@ const ShowCard: React.FC<ShowCardProps> = ({
   ticketLink,
   note,
 }) => {
+  // Parse the date string as a local date without time zone shifting
+  const parsedDate = parse(date, "yyyy-MM-dd", new Date());
+  const displayDate = format(parsedDate, "MM.dd.yyyy");
+
   return (
     <div className="max-w-5xl rounded-md border border-gray-200 bg-[#F9F8F6] p-7 text-dark shadow-sm sm:px-10 sm:py-7">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-        {/* Left Section: Date, Title, and Buttons */}
+        {/* Left Section */}
         <div className="flex flex-col gap-3 sm:w-1/2">
           <div className="flex flex-col gap-2">
-            <p className="text-base font-semibold text-dark">
-              {format(new Date(date), "MM.dd.yyyy")}
-            </p>
+            <p className="text-base font-semibold text-dark">{displayDate}</p>
             <h2 className="text-2xl font-bold text-dark">{title}</h2>
           </div>
 
-          {/* Buttons */}
           <div className="flex gap-3">
             <Link href={ticketLink || "#"} target="_blank">
               <button className="rounded-full bg-primary px-4 py-3 text-sm hover:bg-gray-300">
@@ -57,7 +58,7 @@ const ShowCard: React.FC<ShowCardProps> = ({
           </div>
         </div>
 
-        {/* Right Section: Venue, Address, Time, and Description */}
+        {/* Right Section */}
         <div className="mr-7 flex flex-col gap-3 sm:w-1/2">
           <div>
             <p className="font-semibold">{venue}</p>
@@ -67,7 +68,7 @@ const ShowCard: React.FC<ShowCardProps> = ({
             {formatTime(startTime)}
             {endTime ? ` - ${formatTime(endTime)}` : ""}
           </p>
-          {note ? <p>{note}</p> : null}
+          {note && <p>{note}</p>}
           <p>{description}</p>
         </div>
       </div>
