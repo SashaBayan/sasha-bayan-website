@@ -1,5 +1,44 @@
 export const shows = [
   {
+    date: "2024-12-31",
+    title: "Solo Sitar @ The Laundry",
+    description:
+      "A special sitar performance at The Laundry in San Francisco. Join me for an afternoon of music and vibes.",
+    venue: "The Laundry",
+    address: "3359 26th St, San Francisco, CA 94110",
+    note: "Performance between 3-5pm.",
+    startTime: "12:00", // 12:00 PM
+    endTime: "17:00", // 5:00 PM
+  },
+  {
+    date: "2024-12-25",
+    title: "Private event in Marin",
+    description: "A private event for friends",
+    venue: "Private Residence",
+    address: "Marin, CA",
+    startTime: "12:00", // 12:00 PM
+    endTime: "16:00", // 4:00 PM
+  },
+  {
+    date: "2024-12-28",
+    title: "Private event in Woodside",
+    description: "A private soundhealing",
+    venue: "Private Residence",
+    address: "Woodside, CA",
+    startTime: "10:00", // 10:00 AM
+    endTime: "17:00", // 5:00 PM
+  },
+  {
+    date: "2024-12-28",
+    title: "Ruh y Alma at Kinfolx",
+    description:
+      "Join us for an evening of sitar, piano, and beats with my duo Ruh y Alma",
+    venue: "Kinfolx",
+    address: "1951 Telegraph Ave, Suite 4, Oakland, CA 94612-2208",
+    startTime: "19:30",
+    endTime: "22:00", // 10:00 PM
+  },
+  {
     date: "2024-12-20",
     title: "High Tide at The Center SF",
     description:
