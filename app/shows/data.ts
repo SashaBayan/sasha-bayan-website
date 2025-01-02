@@ -37,6 +37,8 @@ export const shows = [
     address: "1951 Telegraph Ave, Suite 4, Oakland, CA 94612-2208",
     startTime: "19:30",
     endTime: "22:00", // 10:00 PM
+    ticketLink:
+      "https://posh.vip/e/relfect-reset-kinfolx-late-night-tea-lounge?t=posh",
   },
   {
     date: "2024-12-20",
