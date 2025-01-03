@@ -11,16 +11,16 @@ export const shows = [
     endTime: "17:00", // 5:00 PM
   },
   {
-    date: "2024-12-25",
+    date: "2025-01-01",
     title: "Private event in Marin",
     description: "A private event for friends",
     venue: "Private Residence",
-    address: "Marin, CA",
+    address: "Novato, CA",
     startTime: "12:00", // 12:00 PM
     endTime: "16:00", // 4:00 PM
   },
   {
-    date: "2024-12-28",
+    date: "2025-01-04",
     title: "Private event in Woodside",
     description: "A private soundhealing",
     venue: "Private Residence",
@@ -29,7 +29,7 @@ export const shows = [
     endTime: "17:00", // 5:00 PM
   },
   {
-    date: "2024-12-28",
+    date: "2025-01-04",
     title: "Ruh y Alma at Kinfolx",
     description:
       "Join us for an evening of sitar, piano, and beats with my duo Ruh y Alma",
