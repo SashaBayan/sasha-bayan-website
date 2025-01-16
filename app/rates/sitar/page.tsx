@@ -35,12 +35,14 @@ const SitarRates = () => {
             <strong>Corporate Events:</strong> $1000 - $2500
           </li>
         </ul>
-        <p>
+        <p className="mb-4">
           These rates reflect the time and effort involved in preparing for and
-          performing at your event, including setup and travel. I do not
-          typically offer lower rates for shorter performances, as the
-          preparation and effort required remain the same regardless of the
-          duration of the engagement.
+          performing at your event, including setup and travel.
+        </p>
+        <p className="italic">
+          Note: I do not typically offer lower rates for shorter performances,
+          as the preparation and effort required remain the same regardless of
+          duration.
         </p>
       </section>
 
@@ -48,23 +50,28 @@ const SitarRates = () => {
       <section className="mb-8">
         <h2 className="mb-4 text-xl font-semibold">What’s Included</h2>
         <ul className="mb-4 list-disc space-y-2 pl-5">
-          <li>Sitar, pedal board, and portable battery-powered amp.</li>
           <li>
-            Flexible and easy setup requiring minimal effort from organizers.
+            <strong>Equipment:</strong> Sitar, pedal board, and portable
+            battery-powered amp.
           </li>
           <li>
-            Arriving 15–30 minutes before and after the event to ensure proper
-            setup and placement.
+            <strong>Flexibility:</strong> My setup is easy and requires minimal
+            effort from organizers.
           </li>
           <li>
-            Short breaks between 2–3 sets, depending on the flow of the event.
+            <strong>Logistics:</strong> I arrive 15–30 minutes before and after
+            the event to ensure proper setup and placement.
+          </li>
+          <li>
+            <strong>Breaks:</strong> Short breaks between 2–3 sets, depending on
+            the flow of your event.
           </li>
         </ul>
         <p>
-          If you would like an ensemble (e.g., percussion, violin, piano), I
-          have a network of talented musicians. Rates for solo performances can
-          be adjusted to accommodate ensembles ranging from duos to a full
-          7-piece fusion band.
+          If you’d like an ensemble (e.g., percussion, violin, piano), I have a
+          network of talented musicians. Rates for solo performances can be
+          adjusted to accommodate ensembles ranging from duos to a full 7-piece
+          fusion band.
         </p>
       </section>
 
