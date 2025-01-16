@@ -33,7 +33,7 @@ const SitarRates = () => {
           These rates reflect the time and effort involved in preparing for and
           performing at your event, including setup and travel.
         </p>
-        <p className="italic">
+        <p className="mb-4 italic">
           Note: I do not typically offer lower rates for shorter performances,
           as the preparation and effort required remain the same regardless of
           duration.
@@ -49,7 +49,7 @@ const SitarRates = () => {
       {/* Accessibility and Energy Exchange Section */}
       <section className="mb-8">
         <h2 className="mb-4 text-xl font-semibold">
-          Accessibility and Energy Exchange Options
+          Accessibility and Energy Exchange
         </h2>
         <p className="mb-4">
           Music is my calling, and I believe it should be accessible to
