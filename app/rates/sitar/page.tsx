@@ -46,14 +46,23 @@ const SitarRates = () => {
         </p>
       </section>
 
-      {/* Energy Exchange Section */}
+      {/* Accessibility and Energy Exchange Section */}
       <section className="mb-8">
-        <h2 className="mb-4 text-xl font-semibold">Energy Exchange Options</h2>
+        <h2 className="mb-4 text-xl font-semibold">
+          Accessibility and Energy Exchange Options
+        </h2>
         <p className="mb-4">
-          For those unable to meet my financial rate, I’m open to creative
-          alternatives that honor the value of my music. Examples of past
-          exchanges include:
+          Music is my calling, and I believe it should be accessible to
+          everyone. Growing up with limited means, music transformed my life. I
+          aim to honor my guru, Raja Angara, who never charged me for lessons
+          but instead asked that I master the music and share it with the world.
         </p>
+        <p className="mb-4">
+          In that spirit, I’m committed to ensuring money is never a barrier to
+          sharing my music. If my financial rate is out of reach, I’m open to
+          creative alternatives that honor the value of my time and effort.
+        </p>
+        <p className="mb-4">Past energy exchanges have included:</p>
         <ul className="mb-4 list-disc space-y-2 pl-5">
           <li>Free yoga classes</li>
           <li>Lessons (e.g., movement, meditation)</li>
@@ -61,8 +70,9 @@ const SitarRates = () => {
           <li>Acupuncture sessions</li>
         </ul>
         <p>
-          Have an idea for an exchange? Let me know! I value generosity and
-          creativity in finding solutions that work for both of us.
+          If you have an idea for an exchange that feels fair and mutually
+          beneficial, I’d love to hear it. Let’s find a solution that works for
+          both of us while keeping music accessible to all.
         </p>
       </section>
 
@@ -80,23 +90,6 @@ const SitarRates = () => {
         <p>
           My performances are the result of a lifetime dedicated to mastering my
           craft.
-        </p>
-      </section>
-
-      {/* Accessibility Section */}
-      <section className="mb-8">
-        <h2 className="mb-4 text-xl font-semibold">
-          Accessibility and My Philosophy
-        </h2>
-        <p className="mb-4">
-          Music is my calling, and I believe it should be accessible to
-          everyone. Growing up with limited means, music transformed my life. I
-          aim to honor my guru, Raja Angara, who never charged me for lessons
-          but asked that I master the music and share it with the world.
-        </p>
-        <p>
-          If my rates are not feasible, I’m happy to explore options that ensure
-          money is never a barrier.
         </p>
       </section>
 
