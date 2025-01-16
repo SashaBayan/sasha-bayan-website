@@ -9,14 +9,8 @@ const SitarRates = () => {
       </p>
       <p className="mb-4">
         Below, I’ve outlined my rates, along with flexible options to keep my
-        music accessible to all. If your budget doesn’t align, please let me
-        know—I’m dedicated to finding a solution that works. My goal is to build
-        a meaningful connection that inspires future collaborations.
-      </p>
-      <p className="mb-8">
-        While money is an important factor, it’s just one piece of the puzzle.
-        Let’s work together to create a path that feels like a true win-win for
-        both of us.
+        music accessible to all. My goal is to build a meaningful connection
+        that inspires future collaborations.
       </p>
 
       {/* Rates Section */}
@@ -26,7 +20,7 @@ const SitarRates = () => {
         </h2>
         <ul className="mb-4 space-y-2">
           <li>
-            <strong>Community Events:</strong> $300 - $500
+            <strong>Community Events:</strong> $250 - $500
           </li>
           <li>
             <strong>Private Events:</strong> $450 - $750
@@ -44,29 +38,6 @@ const SitarRates = () => {
           as the preparation and effort required remain the same regardless of
           duration.
         </p>
-      </section>
-
-      {/* What's Included Section */}
-      <section className="mb-8">
-        <h2 className="mb-4 text-xl font-semibold">What’s Included</h2>
-        <ul className="mb-4 list-disc space-y-2 pl-5">
-          <li>
-            <strong>Equipment:</strong> Sitar, pedal board, and portable
-            battery-powered amp.
-          </li>
-          <li>
-            <strong>Flexibility:</strong> My setup is easy and requires minimal
-            effort from organizers.
-          </li>
-          <li>
-            <strong>Logistics:</strong> I arrive 15–30 minutes before and after
-            the event to ensure proper setup and placement.
-          </li>
-          <li>
-            <strong>Breaks:</strong> Short breaks between 2–3 sets, depending on
-            the flow of your event.
-          </li>
-        </ul>
         <p>
           If you’d like an ensemble (e.g., percussion, violin, piano), I have a
           network of talented musicians. Rates for solo performances can be
