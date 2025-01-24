@@ -88,4 +88,17 @@ export const shows = [
     note: "Performance from 6-7pm.", // Note for performance timing
     ticketLink: "https://partiful.com/e/2CqWgffPeQB85qZlvNDu?",
   },
+  {
+    date: "2025-01-29",
+    title: "Wellness Wednesday | Yoga with Sitar",
+    description:
+      "A mid-week evening to decompress and rejuvenate, combining yoga with live sitar music and a night sauna garden experience. Sasha Bayan will share sitar compositions inspired by audience themes and stories from his musical studies in India, Brazil, and Spain, merging seamlessly with Victoria Guarino’s gentle yoga guidance.",
+    venue: "Alchemy Springs",
+    address: "San Francisco, CA",
+    startTime: "17:30", // 5:30 PM
+    endTime: "21:00", // 9:00 PM
+    note: "Wellness Classes: 5:30-7pm ($35), Sauna Garden: 7-9pm ($90). Bring your own towels, robe, and sandals.",
+    ticketLink:
+      "https://momence.com/Wellness-Wednesdays/Wellness-Wednesday-%7C-Yoga-with-Sitar/108500900?skipPreview=true",
+  },
 ];
