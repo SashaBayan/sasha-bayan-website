@@ -49,13 +49,15 @@ const ShowCard: React.FC<ShowCardProps> = ({
             <h2 className="text-2xl font-bold text-dark">{title}</h2>
           </div>
 
-          <div className="flex gap-3">
-            <Link href={ticketLink || "#"} target="_blank">
-              <button className="rounded-full bg-primary px-4 py-3 text-sm hover:bg-gray-300">
-                Get tickets
-              </button>
-            </Link>
-          </div>
+          {ticketLink ? (
+            <div className="flex gap-3">
+              <Link href={ticketLink || "#"} target="_blank">
+                <button className="rounded-full bg-primary px-4 py-3 text-sm hover:bg-gray-300">
+                  Get tickets
+                </button>
+              </Link>
+            </div>
+          ) : null}
         </div>
 
         {/* Right Section */}
